@@ -14,6 +14,9 @@
 .sub-list {
   list-style: none;
 }
+ul span{
+  display: inline-block;
+}
 .side-bar {
   width: 260px;
   height: calc(100vh - 55px);
@@ -81,6 +84,7 @@
 }
 .list-style-none {
   list-style: none;
+  display: inline-block;
 }
 .icon-gap {
   margin-right: 12px;
@@ -104,63 +108,63 @@
 .nav-small-cap {
   display: none;
   padding: 0 30px;
-  display: none;
 }
 
-ul span,
-.list-style-none {
-  display: inline-block;
+
+.small-sidebar {
+  ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+    display: none;
+  }
+  .sidebar-link {
+    padding-left: 24px;
+  }
+  &.side-bar {
+    width: 75px;
+    top: 70px;
+  }
+  .nav-small-cap {
+    display: block;
+    padding: 0 30px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%)
+      hue-rotate(154deg) brightness(88%) contrast(80%);
+  }
+  &:hover {
+    width: 265px;
+    top: 70px;
+    ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+      display: inline-block;
+    }
+    .nav-small-cap {
+      display: none;
+    }
+  }
+  & + div .main-containt {
+    margin-left: 75px;
+  }
 }
 
-.small-sidebar ul span,
-.small-sidebar .side-li a div:nth-child(2) img,
-.small-sidebar .support-link,
-.small-sidebar .list-style-none,
-.small-nav .big-logo {
-  display: none;
+
+.big-sidebar {
+  ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+    display: inline-block;
+  }
+  .sidebar-link {
+    padding-left: 30px;
+  }
+  &.side-bar {
+    width: 260px;
+  }
+  .nav-small-cap {
+    display: none;
+  }
 }
-.small-sidebar .sidebar-link {
-  padding-left: 24px;
+
+.small-nav {
+  .small-logo {
+    display: inline-block;
+  }
+  .big-logo {
+    display: none;
+  }
 }
-.small-sidebar.side-bar {
-  width: 75px;
-  top: 70px;
-}
-.small-sidebar .nav-small-cap {
-  display: block;
-  padding: 0 30px;
-  filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%)
-    hue-rotate(154deg) brightness(88%) contrast(80%);
-}
-.big-sidebar ul span,
-.big-sidebar .side-li a div:nth-child(2) img,
-.big-sidebar .support-link,
-.big-sidebar .list-style-none {
-  display: inline-block;
-}
-.big-sidebar .sidebar-link {
-  padding-left: 30px;
-}
-.big-sidebar.side-bar {
-  width: 260px;
-}
-.big-sidebar .nav-small-cap {
-  display: none;
-}
-.small-sidebar:hover ul span,
-.small-sidebar:hover .side-li a div:nth-child(2) img,
-.small-sidebar:hover .support-link,
-.small-sidebar:hover .list-style-none,
-.small-nav .small-logo {
-  display: inline-block;
-}
-.small-sidebar:hover {
-  width: 265px;
-  top: 70px;
-}
-.small-sidebar:hover .nav-small-cap {
-  display: none;
-}
-.small-sidebar + div .main-containt {
-  margin-left: 75px;
-}
+
