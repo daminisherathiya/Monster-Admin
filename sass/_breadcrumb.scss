@@ -1,0 +1,36 @@
+.breadcrumb-section {
+    margin-bottom: 20px;
+}
+.mybreadcrumb-item {
+    font-size: 14px;
+    font-weight: normal;
+    color: #a6afbb;
+    &::before {
+        padding-right: 5px !important;
+    }
+}
+.home {
+    color: $gray-color;
+}
+
+.main-containt {
+    margin-left: 260px;
+    padding: 90px 32px 0 32px;
+}
+.create-btn-group {
+    border-radius: 3px;
+    background-color:$green-color;
+    border-color: $green-color;
+    font-weight: $medium;;
+} 
+.c-btn-f {
+    font-size: $font-13;
+}
+.dropdown-toggle-split:hover {
+    background-color: #51c45f;
+}
+.dashboard-title {
+    font-size: 24px;
+    font-weight: $medium;;
+    color: rgb(17, 160, 248);
+}

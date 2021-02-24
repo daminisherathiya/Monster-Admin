@@ -1,0 +1,106 @@
+.table-left-border, .side-li .sidebar-link {
+    border-left: 3px solid transparent;
+}
+tr:hover .table-left-border, .side-li:hover .sidebar-link, .side-li .sidebar-link.active{
+    border-left: 3px solid $blue-color;
+}  
+.asigned-user-name {
+    font-size: $font-14;
+    color: rgb(100, 116, 133);
+    font-weight: $medium;
+}
+.user-work {
+    font-size: $font-13;
+    color: rgb(166, 183, 191);
+    font-weight: $regular;
+}
+.table-header {
+    font-size: $font-14;
+    color: rgb(178, 185, 196);
+    font-weight: $medium;
+}
+
+table {
+    td {
+        padding: 16px 8px !important;
+        border-bottom: 1px solid $border-color !important;
+    }
+    th.table-header {
+        border-bottom: 1px solid $border-color !important;
+    }
+}
+%badge {
+    font-weight: $regular;
+    font-size: $font-12;
+    border-radius: 3px;
+}
+.t-user-name {
+    font-size: $font-14;
+    color: rgb(100, 116, 133);
+    font-weight: $regular;
+}
+.low-badge {
+    @extend %badge;
+    background-color: rgb(220, 246, 223);
+    color:$green-color;
+    padding: 4.5px 15.4px;
+}
+.medium-badge {
+    @extend %badge;
+    background-color:  rgb(206, 236, 255);
+    color: $blue-color;
+    padding: 4.5px 13px;
+}  
+.high-badge {
+    @extend %badge;
+    background-color: rgb(249, 231, 235);
+    color: rgb(246, 45, 81);
+    padding: 4.5px 12px;
+}
+.budget {
+    font-size: $font-14;
+    color: rgb(100, 116, 133);
+    font-weight: $regular;
+}
+.th-1 {
+    width: 35%;
+}
+.th-2 {
+    width: 33%;
+}
+.th-3 {
+    width: 20%;
+}
+.th-4 {
+    width: 12%;
+}
+
+.recent-user-name {
+    font-size: $font-15;
+    color: $gray-color;
+    font-weight: $medium;
+}
+.activity-of-user {
+    font-size: $font-15;
+    color: $gray-color;
+    font-weight: $regular;
+}
+.date-time {
+    font-size: $font-13;
+    color: rgb(142, 152, 164);
+    font-weight: $light;
+}
+.full-activity-link {
+    font-size: $font-14;
+    color: $blue-color;
+    font-weight: $medium;
+}
+.checkout-link {
+    margin-bottom: 3px;
+}
+.activities-margin {
+    margin-bottom: 38px;
+}
+.icon-hover:hover, .blue-arrow{
+    filter: invert(56%) sepia(55%) saturate(7040%) hue-rotate(190deg) brightness(114%) contrast(94%);
+}

@@ -1,0 +1,202 @@
+.card-box {
+  padding: 21px 14px;
+}
+.c-title {
+  font-size: $font-18;
+  font-weight: $medium;;
+  color: $gray-text-color;
+  padding-left: 14px;
+}
+.daniel-pro {
+  font-size: $font-18;
+  font-weight: $medium;;
+  color: $gray-color;
+  padding-left: 14px;
+}
+.daniel-pro:hover,
+.recent-user-name:hover,
+.asigned-user-name:hover {
+  color: $blue-color;
+}
+.uiux-design {
+  color: $gray-text-color;
+  font-size: $font-14;
+  font-weight: $light;;
+}
+.card-select {
+  color: $gray-text-color;
+  font-size: $font-14;
+  font-weight: $light;;
+  padding-right: 31px;
+}
+.select-position {
+  background-position: right 0.1rem center;
+}
+.b-purple-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(116, 90, 242);
+}
+.b-blue-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $blue-color;
+}
+.b-green-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green-color;
+}
+.tags {
+  padding: 0px 19px;
+}
+.tag-p {
+  font-size: $font-15;
+  color: $gray-text-color;
+  font-weight: $regular;;
+}
+.c-s-title {
+  font-size: $font-16;
+  padding-left: 21px;
+}
+.card-total-counts {
+  font-size: 30px;
+  font-weight: $light;;
+  color: $gray-color;
+}
+.total-sales {
+  font-size: $font-14;
+  font-weight: $regular;;
+  color: #a6b7bf;
+}
+.follow-btn {
+  border-radius: 3px;
+  background-color: rgb(60, 202, 76);
+  color: $white;
+  padding: 8.5px 20.9px;
+  font-size: $font-13;
+  font-weight: $medium;;
+}
+.follow-btn:hover {
+  color: $white;
+  background-color: rgb(138, 211, 146);
+}
+.p-tag {
+  font-size: $font-14;
+  font-weight: $light;;
+  color: $gray-text-color;
+}
+.seprator {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  padding: 0 27px;
+  margin: 0 33px;
+}
+.side-p {
+  padding-left: 44.5px;
+  padding-right: 44.5px;
+}
+.profile-p {
+  font-size: $font-15;
+  color: $gray-text-color;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+}
+.set-ring {
+  position: absolute;
+  top: 17%;
+  left: 26%;
+}
+.total-per,
+.total-sale-jan {
+  font-weight: $regular;;
+  color: rgb(82, 92, 101);
+  font-size: 39px;
+  text-align: center;
+}
+.total-sale-jan {
+  font-weight: $light;;
+  font-size: $font-16;
+}
+.total {
+  position: absolute;
+  top: 32%;
+  left: 31%;
+}
+#sale-diff-chart {
+  width: 135px;
+}
+#sales-prediction {
+  width: 168px;
+}
+.w-65 {
+  width: 65%;
+}
+.myselecet {
+  color: $gray-text-color;
+  background-color: rgb(242, 247, 248);
+  font-size: $font-14;
+  font-weight: $light;
+  padding: 9.5px 88px 9.5px 12px;
+}
+.progress-box {
+  border: 1px solid $border-color;
+  padding: 23px 21px;
+}
+.total-counts {
+  font-size: 36px;
+  font-weight: $light;
+  color: $gray-color;
+}
+.new-items {
+  font-size: $font-15;
+}
+.chart-box ,.card-box {
+  border: 1px solid $border-color;
+}
+.chart-container {
+  padding: 28px;
+}
+.chart-h {
+  font-size: $font-21;
+  font-weight: $medium;;
+  color: $gray-color;
+}
+.blue-dot {
+  width: 8px;
+  height: 8px;
+  background-color: $blue-color;
+  border-radius: 50%;
+}
+.green-dot {
+  width: 8px;
+  height: 8px;
+  background-color: $green-color;
+  border-radius: 50%;
+}
+.dot-p {
+  font-size: $font-13;
+  color: #a6b7bf;
+  font-weight: $medium;;
+  padding: 0 13px 0 7px;
+}
+.sale-comp {
+  margin-bottom: 30px;
+}
+.footer-p {
+  font-size: $font-14;
+  font-weight: $regular;
+  color: rgb(177, 185, 195);
+  margin: 35px 0;
+}
+.footer-theamdesigner {
+  font-size: $font-14;
+  font-weight: $medium;;
+  color: $gray-color;
+}  
+.footer-theamdesigner:hover {
+  color: $blue-color;
+}
