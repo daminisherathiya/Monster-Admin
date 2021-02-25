@@ -1,15 +1,18 @@
 .card-box {
   padding: 21px 14px;
+  @include media-breakpoint-down(sm) {
+    padding: 14px 14px;
+  }
 }
 .c-title {
   font-size: $font-18;
-  font-weight: $medium;;
+  font-weight: $medium;
   color: $gray-text-color;
   padding-left: 14px;
 }
 .daniel-pro {
   font-size: $font-18;
-  font-weight: $medium;;
+  font-weight: $medium;
   color: $gray-color;
   padding-left: 14px;
 }
@@ -21,12 +24,12 @@
 .uiux-design {
   color: $gray-text-color;
   font-size: $font-14;
-  font-weight: $light;;
+  font-weight: $light;
 }
 .card-select {
   color: $gray-text-color;
   font-size: $font-14;
-  font-weight: $light;;
+  font-weight: $light;
   padding-right: 31px;
 }
 .select-position {
@@ -56,7 +59,7 @@
 .tag-p {
   font-size: $font-15;
   color: $gray-text-color;
-  font-weight: $regular;;
+  font-weight: $regular;
 }
 .c-s-title {
   font-size: $font-16;
@@ -64,12 +67,12 @@
 }
 .card-total-counts {
   font-size: 30px;
-  font-weight: $light;;
+  font-weight: $light;
   color: $gray-color;
 }
 .total-sales {
   font-size: $font-14;
-  font-weight: $regular;;
+  font-weight: $regular;
   color: #a6b7bf;
 }
 .follow-btn {
@@ -78,7 +81,7 @@
   color: $white;
   padding: 8.5px 20.9px;
   font-size: $font-13;
-  font-weight: $medium;;
+  font-weight: $medium;
 }
 .follow-btn:hover {
   color: $white;
@@ -86,7 +89,7 @@
 }
 .p-tag {
   font-size: $font-14;
-  font-weight: $light;;
+  font-weight: $light;
   color: $gray-text-color;
 }
 .seprator {
@@ -112,13 +115,13 @@
 }
 .total-per,
 .total-sale-jan {
-  font-weight: $regular;;
+  font-weight: $regular;
   color: rgb(82, 92, 101);
   font-size: 39px;
   text-align: center;
 }
 .total-sale-jan {
-  font-weight: $light;;
+  font-weight: $light;
   font-size: $font-16;
 }
 .total {
@@ -154,15 +157,19 @@
 .new-items {
   font-size: $font-15;
 }
-.chart-box ,.card-box {
+.chart-box,
+.card-box {
   border: 1px solid $border-color;
 }
 .chart-container {
   padding: 28px;
+  @include media-breakpoint-down(sm) {
+    padding: 14px 14px;
+  }
 }
 .chart-h {
   font-size: $font-21;
-  font-weight: $medium;;
+  font-weight: $medium;
   color: $gray-color;
 }
 .blue-dot {
@@ -180,7 +187,7 @@
 .dot-p {
   font-size: $font-13;
   color: #a6b7bf;
-  font-weight: $medium;;
+  font-weight: $medium;
   padding: 0 13px 0 7px;
 }
 .sale-comp {
@@ -194,9 +201,27 @@
 }
 .footer-theamdesigner {
   font-size: $font-14;
-  font-weight: $medium;;
+  font-weight: $medium;
   color: $gray-color;
-}  
+}
 .footer-theamdesigner:hover {
   color: $blue-color;
+}
+@media (max-width: 1300px) {
+  .side-p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card-box {
+    padding: 21px 14px;
+  }
+}
+@media (max-width: 356px) {
+  .seprator {
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+  .card-total-counts {
+    font-size: $font-21;
+  }
 }

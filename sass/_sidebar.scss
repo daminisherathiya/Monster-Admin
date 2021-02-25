@@ -1,21 +1,42 @@
+%sidebar-link-style {
+  font-size: $font-15;
+  color: $sidebar-link-color;
+  font-weight: $regular;
+  padding-left: 30px;
+}
 .big-logo {
   display: block;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
 }
 .small-logo {
   display: none;
+  @include media-breakpoint-down(lg) {
+    display: block;
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 .side-sublink {
   padding: 9px 0;
 }
-.sidebar-style {
-  list-style: none;
-  background-color: #f2f7f8;
-}
+
 .sub-list {
   list-style: none;
 }
-ul span{
+ul span {
   display: inline-block;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  @include media-breakpoint-down(sm) {
+    display: inline-block;
+  }
 }
 .side-bar {
   width: 260px;
@@ -24,39 +45,67 @@ ul span{
   overflow: auto;
   z-index: 100;
   width: 260px;
-}
-%sidebar-link-style {
-  font-size: $font-15;
-  color: $sidebar-link-color;
-  font-weight: $regular;;
-  padding-left: 30px;
-}
-.sidebar-link {
-  @extend %sidebar-link-style;
-  padding: 13px 0 13px 30px;
-  padding-left: 30px;
-  &.active > * {
-    @extend %sidebar-hover-effect;
+  @include media-breakpoint-down(lg) {
+    width: 75px;
+    top: 70px;
+    .list-style-none,
+    .support-link {
+      display: none;
+    }
+    &:hover {
+      width: 265px;
+      top: 69px;
+      .nav-small-cap {
+        display: none;
+      }
+      ul span,
+      .side-li a div:nth-child(2) img,
+      .support-link,
+      .list-style-none {
+        display: inline-block;
+      }
+    }
   }
-  &.active {
-    background-color: $white;
+  @include media-breakpoint-down(sm) {
+    width: 265px;
+    top: 69px;
+  }
+  .sidebar-style {
+    list-style: none;
+    background-color: #f2f7f8;
+    .sidebar-link {
+      @extend %sidebar-link-style;
+      padding: 13px 0 13px 30px;
+      padding-left: 30px;
+      &.active > * {
+        @extend %sidebar-hover-effect;
+      }
+      &.active {
+        background-color: $white;
+      }
+      @include media-breakpoint-down(lg) {
+        padding-left: 24px;
+      }
+    }
   }
 }
+
 .sidebar-sublink {
   @extend %sidebar-link-style;
   &.active,
   &:hover {
-    font-weight: $medium;;
+    font-weight: $medium;
     color: $sidebar-link-color;
   }
 }
-.side-li a img, .nav-small-cap {
+.side-li a img,
+.nav-small-cap {
   filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%)
     hue-rotate(154deg) brightness(88%) contrast(80%);
 }
 %sidebar-hover-effect {
   font-size: $font-15;
-  font-weight: $medium;;
+  font-weight: $medium;
   filter: brightness(0) saturate(100%) invert(56%) sepia(55%) saturate(7040%)
     hue-rotate(190deg) brightness(114%) contrast(94%);
 }
@@ -71,6 +120,12 @@ ul span{
       &:nth-child(2) {
         img {
           display: inline-block;
+          @include media-breakpoint-down(sm) {
+            display: inline-block;
+          }
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
         }
       }
     }
@@ -79,7 +134,7 @@ ul span{
 .sidebar-title {
   font-size: $font-12;
   color: $sidebar-link-color;
-  font-weight: $medium;;
+  font-weight: $medium;
   line-height: 24px;
 }
 .list-style-none {
@@ -94,8 +149,8 @@ ul span{
 }
 .support-link {
   font-size: $font-15;
-  color:$sidebar-link-color;
-  font-weight: $regular;;
+  color: $sidebar-link-color;
+  font-weight: $regular;
   padding-left: 24px;
   display: inline-block;
   &:hover {
@@ -108,11 +163,22 @@ ul span{
 .nav-small-cap {
   display: none;
   padding: 0 30px;
+  @include media-breakpoint-down(lg) {
+    display: block;
+    padding: 0 30px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%)
+      hue-rotate(154deg) brightness(88%) contrast(80%);
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 
-
 .small-sidebar {
-  ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+  ul span,
+  .side-li a div:nth-child(2) img,
+  .support-link,
+  .list-style-none {
     display: none;
   }
   .sidebar-link {
@@ -131,7 +197,10 @@ ul span{
   &:hover {
     width: 265px;
     top: 70px;
-    ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+    ul span,
+    .side-li a div:nth-child(2) img,
+    .support-link,
+    .list-style-none {
       display: inline-block;
     }
     .nav-small-cap {
@@ -143,9 +212,11 @@ ul span{
   }
 }
 
-
 .big-sidebar {
-  ul span, .side-li a div:nth-child(2) img, .support-link, .list-style-none {
+  ul span,
+  .side-li a div:nth-child(2) img,
+  .support-link,
+  .list-style-none {
     display: inline-block;
   }
   .sidebar-link {
@@ -167,4 +238,13 @@ ul span{
     display: none;
   }
 }
-
+@include media-breakpoint-down(sm) {
+  .minimize-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 356px) {
+  .big-logo {
+    width: 155px;
+  }
+}
