@@ -233,7 +233,7 @@
         </li>
         <li class="nav-divider"></li>
         <li>
-          <div class="d-flex w-100 side-li align-items-center">
+          <div class="d-flex w-100 sidebar-link ps-0 align-items-center">
             <span class="sidebar-title ps-4">PROFESSIONAL</span>
             <span class="nav-small-cap">...</span>
           </div>
@@ -424,7 +424,7 @@
         </li>
         <li class="nav-divider"></li>
         <li>
-          <div class="d-flex w-100 side-li align-items-center">
+          <div class="d-flex w-100 sidebar-link ps-0 align-items-center">
             <span class="sidebar-title ps-4">SUPPORT</span>
           </div>
         </li>
@@ -506,94 +506,25 @@
       ------------------------------------------------->
 
       <!-----------------------------------------------
-        Start progress section
-      ------------------------------------------------->
-      <div>
-        <div class="row gx-3">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex justify-content-between progress-box h-100">
-              <div class="px-1">
-                <h6 class="total-counts">86</h6>
-                <p class="new-items mb-0 px-1">New Clients</p>
-              </div>
-              <div class="col text-end align-self-center">
-                <div data-label="26%" class="css-bar mb-0 css-bar-info css-bar-20"></div>
-                <!-- <div id="new-client"></div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <h6 class="total-counts">248</h6>
-                <p class="new-items mb-0 px-1">New Projects</p>
-              </div>
-              <div>
-                <div class="col text-end align-self-center">
-                  <div data-label="26%" class="css-bar mb-0 css-bar-success css-bar-20"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <h6 class="total-counts">352</h6>
-                <p class="new-items mb-0 px-1">Open Projects</p>
-              </div>
-              <div>
-                <div class="col text-end ">
-                  <div data-label="26%" class="css-bar mb-0 css-bar-primary css-bar-20"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <h6 class="total-counts">159</h6>
-                <p class="new-items mb-0 px-1">New Invoices</p>
-              </div>
-              <div>
-                <div class="col text-end align-self-center">
-                  <div data-label="26%" class="css-bar mb-0 css-bar-danger css-bar-20"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-----------------------------------------------
-        End progress section
-      ------------------------------------------------->
-
-      <!-----------------------------------------------
-        Start Sales Comparison
+        Start Total Revenue
       ------------------------------------------------->
       <div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-xl-6">
             <div class="chart-box mb-3">
               <div class="chart-container">
                 <div class="d-flex flex-md-row flex-column justify-content-between sale-comp">
                   <div>
-                    <h4 class="chart-h mb-0">Sales Comparison</h4>
-                    <select class="form-select shadow-none myselecet border-0 bg-white p-0 d-inline-block w-73"
-                      aria-label="Default select example">
-                      <option selected>January 2021</option>
-                      <option value="1">February 2021</option>
-                      <option value="2">March 2021</option>
-                      <option value="3">April 2021</option>
-                    </select>
+                    <h4 class="chart-h chart-h-sm mb-0">Total Revenue</h4>
                   </div>
                   <div class="d-flex flex-lg-row flex-column">
                     <div class="d-flex align-items-center">
                       <div class="green-dot"></div>
-                      <p class="dot-p mb-0">MedicalPress Wordpress Theme</p>
+                      <p class="dot-p mb-0">Billed Invoices</p>
                     </div>
                     <div class="d-flex align-items-center">
                       <div class="blue-dot"></div>
-                      <p class="dot-p mb-0">HostingPress Wordpress Theme</p>
+                      <p class="dot-p mb-0">Unbilled Invoices</p>
                     </div>
                   </div>
                 </div>
@@ -604,46 +535,95 @@
               </div>
             </div>
           </div>
+          <div class="col-xl-6">
+            <div class="row h-100">
+              <div class="col-xl-6 mb-3">
+                <div class="d-flex justify-content-between align-items-center progress-box h-100">
+                  <div class="px-1">
+                    <h6 class="total-counts">86</h6>
+                    <p class="new-items mb-0 px-1">New Clients</p>
+                  </div>
+                  <div class="col text-end align-self-center">
+                    <div data-label="26%" class="css-bar mb-0 css-bar-info css-bar-20"></div>
+                    <!-- <div id="new-client"></div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-3">
+                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
+                  <div>
+                    <h6 class="total-counts">248</h6>
+                    <p class="new-items mb-0 px-1">New Projects</p>
+                  </div>
+                  <div>
+                    <div class="col text-end align-self-center">
+                      <div data-label="26%" class="css-bar mb-0 css-bar-success css-bar-20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-3">
+                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
+                  <div>
+                    <h6 class="total-counts">352</h6>
+                    <p class="new-items mb-0 px-1">Open Projects</p>
+                  </div>
+                  <div>
+                    <div class="col text-end ">
+                      <div data-label="26%" class="css-bar mb-0 css-bar-primary css-bar-20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-3">
+                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
+                  <div>
+                    <h6 class="total-counts">159</h6>
+                    <p class="new-items mb-0 px-1">New Invoices</p>
+                  </div>
+                  <div>
+                    <div class="col text-end align-self-center">
+                      <div data-label="26%" class="css-bar mb-0 css-bar-danger css-bar-20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-----------------------------------------------
-        End Sales Comparison
+        End Total Revenue
       ------------------------------------------------->
 
       <div>
-        <div class="row gx-3">
-          <div class="col-xl-8 mb-3">
-            <div class="row gx-3 h-100">
-              <!-----------------------------------------------
-                Start Sales of the Month
-              ------------------------------------------------->
-              <div class="col-md-6 col-xl mb-3 mb-md-0">
-                <div class="card-box h-100 ">
-                  <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
-                    <div>
-                      <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
-                    </div>
-                    <div>
-                      <select class="form-select card-select border-0 shadow-none text-truncate"
-                        aria-label="Default select example">
-                        <option selected>January 2017</option>
-                        <option value="1">February 2017</option>
-                        <option value="2">March 2017</option>
-                        <option value="3">April 2017</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center my-4">
-                    <div class="position-relative">
-                      <div class="set-ring d-sm-block d-none"><img class="img-fluid" src="./images/ring.png" alt=""></div>
-                      <div class="total d-sm-block d-none">
-                        <h4 class="total-per">65%</h4>
-                        <p class="total-sale-jan">160 Sales January</p>
-                      </div>
-                      <div id="sale-of-the-month-chart"></div>
-                    </div>
-                  </div>
+        <div class="col-xl-6">
+          <div class="card-box h-100 ">
+            <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
+              <div>
+                <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
+              </div>
+              <div>
+                <select class="form-select card-select border-0 shadow-none text-truncate"
+                  aria-label="Default select example">
+                  <option selected>January 2017</option>
+                  <option value="1">February 2017</option>
+                  <option value="2">March 2017</option>
+                  <option value="3">April 2017</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center my-4">
+              <div class="position-relative">
+                <div class="set-ring d-sm-block d-none"><img class="img-fluid" src="./images/ring.png" alt=""></div>
+                <div class="total d-sm-block d-none">
+                  <img src="./images/trolly-icon.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div id="sale-of-the-month-chart"></div>
                   <div class="tags mb-2">
+                    <h4 class="total-per text-start">65%</h4>
+                    <p class="total-sale-jan text-start">160 Sales January</p>
                     <div class="row">
                       <div class="col">
                         <div class="d-flex align-items-center mb-2">
@@ -668,346 +648,11 @@
                     </div>
                   </div>
                 </div>
+                
               </div>
-              <!-----------------------------------------------
-                End Sales of the Month
-              ------------------------------------------------->
-
-              <!-----------------------------------------------
-                Start Sales Difference
-              ------------------------------------------------->
-              <div class="col-md-6 col-xl">
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <div class="card-box px-md-0 py-3 mb-3 mb-md-0">
-                    <div
-                      class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
-                      <div>
-                        <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
-                      </div>
-                      <div>
-                        <select class="form-select card-select border-0 shadow-none"
-                          aria-label="Default select example">
-                          <option>January 2017</option>
-                          <option selected value="1">February 2017</option>
-                          <option value="2">March 2017</option>
-                          <option value="3">April 2017</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between px-4 mb-md-2">
-                      <div class="py-4">
-                        <h6 class="card-total-counts mb-1">$4316</h6>
-                        <p class="total-sales mb-0">(150-165 Sales)</p>
-                      </div>
-                      <div>
-                        <!-- <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt=""> -->
-                        <div id="sale-diff-chart"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-box px-md-0 py-3">
-                    <div
-                      class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
-                      <div>
-                        <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
-                      </div>
-                      <div>
-                        <select class="form-select card-select border-0 shadow-none"
-                          aria-label="Default select example">
-                          <option>January 2017</option>
-                          <option selected value="1">February 2017</option>
-                          <option value="2">March 2017</option>
-                          <option value="3">April 2017</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between px-4 mb-md-1">
-                      <div class="py-4">
-                        <h6 class="card-total-counts mb-1">$3528</h6>
-                        <p class="total-sales mb-0">(150-165 Sales)</p>
-                      </div>
-                      <div>
-                        <div id="sales-prediction"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-              <!-----------------------------------------------
-                End Sales Difference
-              ------------------------------------------------->
             </div>
+            
           </div>
-          <!-----------------------------------------------
-            Start Daniel Kristeen Profile
-          ------------------------------------------------->
-          <div class="col-xl-4">
-            <div class="card-box side-p">
-              <div class="d-flex flex-xl-row flex-column justify-content-between mt-3 ">
-                <div class="d-flex justify-content-center mb-3 mb-xl-0">
-                  <div><img class="img-fluid " src="./images/danil-pic.png" alt=""></div>
-                </div>
-                <div class="pe-xl-3 text-center text-xl-start ms-xl-3">
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="daniel-pro mb-0 ps-0 text-nowrap">Daniel Kristeen</h4>
-                  </a>
-                  <p class="uiux-design">UIUX Designer</p>
-                  <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png"
-                      alt="">Follow</button>
-                </div>
-              </div>
-
-              <div class="d-flex my-4 justify-content-center justify-content-xl-start">
-                <div class="text-center">
-                  <h6 class="card-total-counts mb-1">14</h6>
-                  <p class="p-tag mb-0">Photos</p>
-                </div>
-                <div class="seprator text-center">
-                  <h6 class="card-total-counts mb-1">54</h6>
-                  <p class="p-tag mb-0">Videos</p>
-                </div>
-                <div class="text-center">
-                  <h6 class="card-total-counts mb-1">145</h6>
-                  <p class="p-tag mb-0">Tasks</p>
-                </div>
-              </div>
-              <p class="profile-p text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore
-            </div>
-            <div class="card-box border-top-0 side-p mb-3">
-              <div class="d-flex  justify-content-around justify-content-xl-between py-1">
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/earth.png" alt=""></a>
-                </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/twitter.png" alt=""></a>
-                </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/facebook.png" alt=""></a>
-                </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/facebook.png" alt=""></a>
-                </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-----------------------------------------------
-            End Daniel Kristeen Profile
-          ------------------------------------------------->
-        </div>
-      </div>
-
-      <div>
-        <div class="row gx-3">
-          <!-----------------------------------------------
-            Start Projects of the Month
-          ------------------------------------------------->
-          <div class="col-xl-8 mb-3 mb-xl-0">
-            <div class="card-box pb-0 overflow-auto h-100">
-              <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
-                <div>
-                  <h4 class="c-title mb-0">Projects of the Month</h4>
-                </div>
-                <div>
-                  <select class="form-select card-select border-0 shadow-none select-position"
-                    aria-label="Default select example">
-                    <option selected>January 2017</option>
-                    <option value="1">February 2017</option>
-                    <option value="2">March 2017</option>
-                    <option value="3">April 2017</option>
-                  </select>
-                </div>
-              </div>
-              <table class="table text-nowrap">
-                <thead>
-                  <tr class="">
-                    <th class="table-header th-1" scope="col">Assigned</th>
-                    <th class="table-header th-2" scope="col">Name</th>
-                    <th class="table-header th-3" scope="col">Priority</th>
-                    <th class="table-header th-4" scope="col">Budget</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/sunil-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Sunil Joshi</h4>
-                          </a>
-                          <p class="user-work mb-0">Web Designer</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Elite Admin</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
-                    <td class="budget align-middle">$3.9K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/andrev-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Andrew MacDownland</h4>
-                          </a>
-                          <p class="user-work mb-0">Project Manager</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Real Homes WP Theme</td>
-                    <td><span class="medium-badge align-middle">Medium</span></td>
-                    <td class="budget align-middle">$24.5K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/charis-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Christopher Jamil</h4>
-                          </a>
-                          <p class="user-work mb-0">SEO Manager</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">MedicalPro WP Theme</td>
-                    <td><span class="high-badge align-middle">High</span></td>
-                    <td class="budget align-middle">$12.8K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/nirav-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Nirav Joshi</h4>
-                          </a>
-                          <p class="user-work mb-0">Frontend Engineer</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Hosting Press HTML</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
-                    <td class="budget align-middle">$2.4K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/micheal-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Micheal Doe</h4>
-                          </a>
-                          <p class="user-work mb-0">Content Writerr</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Helping Hands WP Theme</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
-                    <td class="budget align-middle">$9.3K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border border-bottom-0">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/johnat-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Johnathan Rhodes</h4>
-                          </a>
-                          <p class="user-work mb-0">Digital Agency PSD</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle border-0">MedicalPro WP Theme</td>
-                    <td class="border-0"><span class="high-badge align-middle">High</span></td>
-                    <td class="budget border-0 align-middle">$2.6K</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-----------------------------------------------
-            End Projects of the Month
-          ------------------------------------------------->
-
-          <!-----------------------------------------------
-            Start Recent Activities
-          ------------------------------------------------->
-          <div class="col-xl-4">
-            <div class="card-box px-sm-4">
-              <div>
-                <h4 class="c-title mb-4 mt-1">Recent Activities</h4>
-              </div>
-              <div class="d-flex align-items-center activities-margin">
-                <div class="me-3"><img class="img-fluid" src="./images/jullian-pic.png" alt=""></div>
-                <div>
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="mb-0 recent-user-name mb-2">Julian Josephs <span class="activity-of-user">Uploaded a
-                        Photo</span></h4>
-                  </a>
-                  <p class="date-time mb-0">10:20 AM 20 may 2016</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center activities-margin">
-                <div class="me-3"><img class="img-fluid" src="./images/daniel-pic.png" alt=""></div>
-                <div>
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="mb-0 recent-user-name mb-2">Daniel <span class="activity-of-user">commented on post
-                        #31</span></h4>
-                  </a>
-                  <p class="date-time mb-0">10:20 AM 20 may 2016</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center activities-margin">
-                <div class="me-3"><img class="img-fluid" src="./images/hanna-pic.png" alt=""></div>
-                <div>
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="mb-0 recent-user-name mb-2">Hanna Gover <span class="activity-of-user">Published post
-                        #451</span></h4>
-                  </a>
-                  <p class="date-time mb-0">10:20 AM 20 may 2016</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center activities-margin">
-                <div class="me-3"><img class="img-fluid" src="./images/sophia-pic.png" alt=""></div>
-                <div>
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="mb-0 recent-user-name mb-2">Sophia <span class="activity-of-user">Published post
-                        #452</span></h4>
-                  </a>
-                  <p class="date-time mb-0">10:20 AM 20 may 2016</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-4">
-                <div class="me-3"><img class="img-fluid" src="./images/krishan-pic.png" alt=""></div>
-                <div>
-                  <a href="#" class="text-decoration-none">
-                    <h4 class="mb-0 recent-user-name mb-2">Krishnan <span class="activity-of-user">Modified a post
-                        #452</span></h4>
-                  </a>
-                  <p class="date-time mb-0">10:20 AM 20 may 2016</p>
-                </div>
-              </div>
-              <div class="checkout-link"><a href="#" class="full-activity-link text-decoration-none px-2">Checkout Full
-                  Activities</a></div>
-            </div>
-          </div>
-          <!-----------------------------------------------
-            End Recent Activities
-          ------------------------------------------------->
         </div>
       </div>
 
@@ -1021,107 +666,7 @@
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/style.js"></script>
   <script src="./apexcharts-bundle/dist/apexcharts.js"></script>
-  <script src="./js/dashboard1.js"></script>
-
-  <script>
-
-    
-  </script>
-
-
-  <!-- <script>
-    var options = {
-      series: [15, 50, 20, 15],
-      chart: {
-        width: 300,
-        type: 'donut',
-        plotOptions: {
-          pie: {
-            startAngle: 0,
-            endAngle: 360,
-            expandOnClick: true,
-            offsetX: 0,
-            offsetY: 0,
-            customScale: 1,
-            dataLabels: {
-              offset: 0,
-              minAngleToShowLabel: 10
-            },
-            donut: {
-              size: '65%',
-              background: 'transparent',
-              labels: {
-                show: true,
-                name: {
-                  show: true,
-                  fontSize: '22px',
-                  fontFamily: 'Helvetica, Arial, sans-serif',
-                  fontWeight: 600,
-                  color: undefined,
-                  offsetY: -10,
-                  formatter: function (val) {
-                    return val
-                  }
-                },
-                value: {
-                  show: true,
-                  fontSize: '16px',
-                  fontFamily: 'Helvetica, Arial, sans-serif',
-                  fontWeight: 400,
-                  color: undefined,
-                  offsetY: 16,
-                  formatter: function (val) {
-                    return val
-                  }
-                },
-                total: {
-                  show: true,
-                  showAlways: true,
-                  label: 'Total',
-                  fontSize: '22px',
-                  fontFamily: 'Helvetica, Arial, sans-serif',
-                  fontWeight: 600,
-                  color: '#373d3f',
-                  formatter: function (w) {
-                    return w.globals.seriesTotals.reduce((a, b) => {
-                      return a + b
-                    }, 0)
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      fill: {
-        colors: ['#745af2', '#edf1f5', '#009efb', '#55ce63'],
-      },
-      dataLabels: {
-        enabled: false
-      },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 200
-          },
-          legend: {
-            show: true
-          }
-        }
-      }],
-      legend: {
-        position: 'right',
-        offsetY: 0,
-        height: 0,
-        width: 0,
-        show: false,
-      }
-    };
-
-    var chart = new ApexCharts(document.querySelector("#sale-of-the-month-chart"), options);
-    chart.render();
-  </script> -->
+  <script src="./js/dashboard2.js"></script>
 </body>
 
 </html>
