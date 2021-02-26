@@ -111,7 +111,7 @@
 .set-ring {
   position: absolute;
   top: 17%;
-  left: 26%;
+  left: 24%;
 }
 .total-per,
 .total-sale-jan {
@@ -119,6 +119,7 @@
   color: rgb(82, 92, 101);
   font-size: 39px;
   text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 .total-sale-jan {
   font-weight: $light;
@@ -232,3 +233,32 @@
 .chart-h-sm {
   font-size: 18px;
 }
+.tags2 {
+  padding: 34px 0;
+}
+#sale-of-the-month-chart {
+  width: 325px;
+  display: flex;
+  justify-content: flex-end;
+}
+.set-ring2 {
+  position: absolute;
+  top: 16%;
+  left: 11%;
+}
+.trolly {
+  position: absolute;
+  top: 44%;
+  left: 25%;
+}
+.degree {
+  font-size: 48px;
+  color: rgb(0, 158, 251);
+  font-weight: 300;
+}
+.F {
+  font-size: 18px;
+  color: rgb(157, 165, 176);
+}
+
+

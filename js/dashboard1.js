@@ -116,7 +116,7 @@ var options_sales_of_the_month = {
         donut: {
             size: '87',
             labels: {
-                show: true,
+                show: false,
                 name: {
                     show: true,
                     offsetY: 7,
