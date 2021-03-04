@@ -6,13 +6,13 @@
 }
 .c-title {
   font-size: $font-18;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   color: $gray-text-color;
   padding-left: 14px;
 }
 .daniel-pro {
   font-size: $font-18;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   color: $gray-color;
   padding-left: 14px;
 }
@@ -24,12 +24,12 @@
 .uiux-design {
   color: $gray-text-color;
   font-size: $font-14;
-  font-weight: $light;
+  font-weight: $font-weight-light;
 }
 .card-select {
   color: $gray-text-color;
   font-size: $font-14;
-  font-weight: $light;
+  font-weight: $font-weight-light;
   padding-right: 31px;
 }
 .select-position {
@@ -59,7 +59,7 @@
 .tag-p {
   font-size: $font-15;
   color: $gray-text-color;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
 }
 .c-s-title {
   font-size: $font-16;
@@ -67,12 +67,12 @@
 }
 .card-total-counts {
   font-size: 30px;
-  font-weight: $light;
+  font-weight: $font-weight-light;
   color: $gray-color;
 }
 .total-sales {
   font-size: $font-14;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
   color: #a6b7bf;
 }
 .follow-btn {
@@ -81,7 +81,7 @@
   color: $white;
   padding: 8.5px 20.9px;
   font-size: $font-13;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
 }
 .follow-btn:hover {
   color: $white;
@@ -89,7 +89,7 @@
 }
 .p-tag {
   font-size: $font-14;
-  font-weight: $light;
+  font-weight: $font-weight-light;
   color: $gray-text-color;
 }
 .seprator {
@@ -115,26 +115,20 @@
 }
 .total-per,
 .total-sale-jan {
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
   color: rgb(82, 92, 101);
   font-size: 39px;
   text-align: center;
   font-family: "Rubik", sans-serif;
 }
 .total-sale-jan {
-  font-weight: $light;
+  font-weight: $font-weight-light;
   font-size: $font-16;
 }
 .total {
   position: absolute;
   top: 32%;
   left: 31%;
-}
-#sale-diff-chart {
-  width: 135px;
-}
-#sales-prediction {
-  width: 168px;
 }
 .w-73 {
   width: 73%;
@@ -143,7 +137,7 @@
   color: $gray-text-color;
   background-color: rgb(242, 247, 248);
   font-size: $font-14;
-  font-weight: $light;
+  font-weight: $font-weight-light;
   padding: 9.5px 88px 9.5px 12px;
 }
 .progress-box {
@@ -152,7 +146,7 @@
 }
 .total-counts {
   font-size: 36px;
-  font-weight: $light;
+  font-weight: $font-weight-light;
   color: $gray-color;
 }
 .new-items {
@@ -170,7 +164,7 @@
 }
 .chart-h {
   font-size: $font-21;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   color: $gray-color;
 }
 .blue-dot {
@@ -188,7 +182,7 @@
 .dot-p {
   font-size: $font-13;
   color: #a6b7bf;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   padding: 0 13px 0 7px;
 }
 .sale-comp {
@@ -196,13 +190,13 @@
 }
 .footer-p {
   font-size: $font-14;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
   color: rgb(177, 185, 195);
   margin: 35px 0;
 }
 .footer-theamdesigner {
   font-size: $font-14;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   color: $gray-color;
 }
 .footer-theamdesigner:hover {
@@ -238,27 +232,80 @@
 }
 #sale-of-the-month-chart {
   width: 325px;
-  display: flex;
-  justify-content: flex-end;
+  // display: flex;
+  // justify-content: flex-end;
 }
 .set-ring2 {
   position: absolute;
   top: 16%;
-  left: 11%;
+  left: 19%;
 }
 .trolly {
   position: absolute;
   top: 44%;
-  left: 25%;
+  left: 41%;
 }
 .degree {
   font-size: 48px;
   color: rgb(0, 158, 251);
   font-weight: 300;
+  margin-right: 34px;
 }
 .F {
   font-size: 18px;
   color: rgb(157, 165, 176);
 }
 
+.chart-container2 {
+  padding: 28px 22px 17px 22px;
+}
+.week-day {
+  font-size: 24px;
+  color: rgb(76, 86, 103);
+  font-weight: $font-weight-normal;
+}
+.weather-location {
+  font-size: $font-13;
+  color: $sidebar-link-color;
+  font-weight: $font-weight-normal;
+}
+.weather-component-key, .weather-component-value {
+  font-size: $font-14;
+  color: rgb(132, 139, 151);
+  font-weight: $font-weight-normal;
+}
+.weather-component-value {
+  font-weight: $font-weight-bold;
+}
+.weather-time, .date {
+  font-size: $font-14;
+  color: $sidebar-link-color;
+  font-weight: $font-weight-light;
+}
+.degree-weather {
+  font-size: $font-24;
+  color: $gray-color;
+  font-weight: $font-weight-light;
+}
+.like-edit-btn{
+  display: none;
+  & img {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(3%) saturate(3101%) hue-rotate(170deg) brightness(80%) contrast(84%);
+    &:nth-child(1):hover {
+      filter: brightness(0) saturate(100%) invert(52%) sepia(27%) saturate(7497%) hue-rotate(176deg) brightness(100%) contrast(104%);
+    }
+    &:nth-child(2):hover {
+      filter: brightness(0) saturate(100%) invert(20%) sepia(68%) saturate(3078%) hue-rotate(334deg) brightness(118%) contrast(93%);
+    }
+    &:nth-child(3):hover {
+      filter: brightness(0) saturate(100%) invert(61%) sepia(52%) saturate(450%) hue-rotate(76deg) brightness(100%) contrast(103%);
+    }
+  }
+}
+.line-height-checkbox {
+  line-height: 24px;
+}
+.form-check:hover label{
+  font-weight: $font-weight-bold;
+}
 

@@ -1,7 +1,7 @@
 %sidebar-link-style {
   font-size: $font-15;
   color: $sidebar-link-color;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
   padding-left: 30px;
 }
 .big-logo {
@@ -93,7 +93,7 @@ ul span {
   @extend %sidebar-link-style;
   &.active,
   &:hover {
-    font-weight: $medium;
+    font-weight: $font-weight-bold;
     color: $sidebar-link-color;
   }
 }
@@ -104,7 +104,7 @@ ul span {
 }
 %sidebar-hover-effect {
   font-size: $font-15;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   filter: brightness(0) saturate(100%) invert(56%) sepia(55%) saturate(7040%)
     hue-rotate(190deg) brightness(114%) contrast(94%);
 }
@@ -133,7 +133,7 @@ ul span {
 .sidebar-title {
   font-size: $font-12;
   color: $sidebar-link-color;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
   line-height: 24px;
 }
 .list-style-none {
@@ -149,7 +149,7 @@ ul span {
 .support-link {
   font-size: $font-15;
   color: $sidebar-link-color;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
   padding-left: 24px;
   display: inline-block;
   &:hover {

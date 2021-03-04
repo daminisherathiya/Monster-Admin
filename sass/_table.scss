@@ -4,23 +4,27 @@
 }
 tr:hover .table-left-border,
 .side-li:hover .sidebar-link,
-.side-li .sidebar-link.active {
+.side-li .sidebar-link.active,
+.table-left-border:hover {
   border-left: 3px solid $blue-color;
+}
+.table-left-border:hover .like-edit-btn{
+  display: flex;
 }
 .asigned-user-name {
   font-size: $font-14;
   color: rgb(100, 116, 133);
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
 }
 .user-work {
   font-size: $font-13;
   color: rgb(166, 183, 191);
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
 }
 .table-header {
   font-size: $font-14;
   color: rgb(178, 185, 196);
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
 }
 
 table {
@@ -32,38 +36,15 @@ table {
     border-bottom: 1px solid $border-color !important;
   }
 }
-%badge {
-  font-weight: $regular;
-  font-size: $font-12;
-  border-radius: 3px;
-}
 .t-user-name {
   font-size: $font-14;
   color: rgb(100, 116, 133);
-  font-weight: $regular;
-}
-.low-badge {
-  @extend %badge;
-  background-color: rgb(220, 246, 223);
-  color: $green-color;
-  padding: 4.5px 15.4px;
-}
-.medium-badge {
-  @extend %badge;
-  background-color: rgb(206, 236, 255);
-  color: $blue-color;
-  padding: 4.5px 13px;
-}
-.high-badge {
-  @extend %badge;
-  background-color: rgb(249, 231, 235);
-  color: rgb(246, 45, 81);
-  padding: 4.5px 12px;
+  font-weight: $font-weight-normal;
 }
 .budget {
   font-size: $font-14;
   color: rgb(100, 116, 133);
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
 }
 .th-1 {
   width: 35%;
@@ -81,22 +62,22 @@ table {
 .recent-user-name {
   font-size: $font-15;
   color: $gray-color;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
 }
 .activity-of-user {
   font-size: $font-15;
   color: $gray-color;
-  font-weight: $regular;
+  font-weight: $font-weight-normal;
 }
 .date-time {
   font-size: $font-13;
   color: rgb(142, 152, 164);
-  font-weight: $light;
+  font-weight: $font-weight-light;
 }
 .full-activity-link {
   font-size: $font-14;
   color: $blue-color;
-  font-weight: $medium;
+  font-weight: $font-weight-bold;
 }
 .checkout-link {
   margin-bottom: 3px;

@@ -8,11 +8,6 @@
 
   <!-- Bootstrap CSS -->
   <link href="./css/style.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="./apexcharts-bundle/dist/apexcharts.css">
   <link rel="icon" type="image/png" href="./images/logo-icon.png" />
@@ -509,15 +504,15 @@
         Start Total Revenue
       ------------------------------------------------->
       <div>
-        <div class="row">
+        <div class="row gx-3">
           <div class="col-xl-6">
             <div class="chart-box mb-3">
               <div class="chart-container">
-                <div class="d-flex flex-md-row flex-column justify-content-between sale-comp">
+                <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center sale-comp">
                   <div>
                     <h4 class="chart-h chart-h-sm mb-0">Total Revenue</h4>
                   </div>
-                  <div class="d-flex flex-lg-row flex-column">
+                  <div class="d-flex flex-column flex-sm-row">
                     <div class="d-flex align-items-center">
                       <div class="green-dot"></div>
                       <p class="dot-p mb-0">Billed Invoices</p>
@@ -536,8 +531,8 @@
             </div>
           </div>
           <div class="col-xl-6">
-            <div class="row h-100">
-              <div class="col-xl-6 mb-3">
+            <div class="row gx-3 h-100">
+              <div class="col-sm-6 mb-3">
                 <div class="d-flex justify-content-between align-items-center progress-box h-100">
                   <div class="px-1">
                     <h6 class="total-counts">86</h6>
@@ -549,7 +544,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 mb-3">
+              <div class="col-sm-6 mb-3">
                 <div class="d-flex progress-box justify-content-between  align-items-center h-100">
                   <div>
                     <h6 class="total-counts">248</h6>
@@ -562,7 +557,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 mb-3">
+              <div class="col-sm-6 mb-3">
                 <div class="d-flex progress-box justify-content-between  align-items-center h-100">
                   <div>
                     <h6 class="total-counts">352</h6>
@@ -575,7 +570,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 mb-3">
+              <div class="col-sm-6 mb-3">
                 <div class="d-flex progress-box justify-content-between  align-items-center h-100">
                   <div>
                     <h6 class="total-counts">159</h6>
@@ -596,10 +591,10 @@
         End Total Revenue
       ------------------------------------------------->
 
-      <div class="row">
+      <div class="row gx-3">
         <div class="col-xl-6 mb-3">
           <div class="card-box h-100 ">
-            <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
+            <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
               <div>
                 <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
               </div>
@@ -614,25 +609,27 @@
               </div>
             </div>
             <div class="d-flex justify-content-center mt-4 mb-3">
-              <div class="position-relative">
-                <div class="set-ring2 d-sm-block d-none"><img class="img-fluid" src="./images/ring2.png" alt=""></div>
-                <div class="trolly d-sm-block d-none">
-                  <img src="./images/trolly-icon.png" alt="">
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div id="sale-of-the-month-chart"></div>
+              <div>  
+                <div class="d-flex justify-content-sm-between justify-content-start flex-column flex-sm-row">
+                  <div class="position-relative align-self-start">
+                    <div class="set-ring2 d-sm-block d-none"><img class="img-fluid" src="./images/ring2.png" alt=""></div>
+                    <div class="trolly d-sm-block d-none">
+                      <img src="./images/trolly-icon.png" alt="">
+                    </div>
+                    <div class="d-flex justify-content-sm-end justify-content-center" id="sale-of-the-month-chart"></div>
+                  </div>        
                   <div class="tags2">
-                    <h4 class="total-per text-start mb-0">65%</h4>
-                    <p class="total-sale-jan text-start mb-4">160 Sales January</p>
+                    <h4 class="total-per text-start mb-0 text-center text-sm-start">65%</h4>
+                    <p class="total-sale-jan text-start mb-4 text-center text-sm-start">160 Sales January</p>
                     <div class="row">
                       <div class="col-12">
-                        <div class="d-flex align-items-center mb-2">
+                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
                           <div class="b-purple-dot me-2"></div>
                           <p class="tag-p mb-0">Organic Sales</p>
                         </div>
                       </div>
                       <div class="col-12">
-                        <div class="d-flex align-items-center mb-2">
+                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
                           <div class="b-blue-dot me-2"></div>
                           <p class="tag-p mb-0">Search Engine Sales</p>
                         </div>
@@ -640,7 +637,7 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <div class="d-flex align-items-center mb-md-2">
+                        <div class="d-flex align-items-center mb-md-2 justify-content-center justify-content-sm-start">
                           <div class="b-green-dot me-2"></div>
                           <p class="tag-p mb-0">Marketing Campaign</p>
                         </div>
@@ -652,14 +649,14 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
-          <div class="chart-box mb-3">
-            <div class="chart-container">
-              <div class="d-flex flex-md-row flex-column justify-content-between sale-comp">
+        <div class="col-xl-6 mb-3">
+          <div class="chart-box h-100">
+            <div class="chart-container2">
+              <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
                 <div>
                   <h4 class="chart-h chart-h-sm mb-0">Income of the Year</h4>
                 </div>
-                <div class="d-flex flex-lg-row flex-column">
+                <div class="d-flex">
                   <div class="d-flex align-items-center">
                     <div class="green-dot"></div>
                     <p class="dot-p mb-0">Growth Income</p>
@@ -672,7 +669,7 @@
               </div>
               <div>
                 <!-- <img class="img-fluid w-100 mb-2" src="./images/chart.png" alt=""> -->
-                <div id="chart"></div>
+                <div id="income-of-the-year"></div>
               </div>
             </div>
           </div>
@@ -680,15 +677,15 @@
       </div>
 
       <div>
-        <div class="row gx-3">
+        <div class="row gx-3 mb-3">
           <!-----------------------------------------------
             Start Projects of the Month
           ------------------------------------------------->
           <div class="col-xl-8 mb-3 mb-xl-0">
-            <div class="card-box pb-0 overflow-auto h-100">
+            <div class="card-box pb-0 overflow-auto h-100 px-sm-4">
               <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
                 <div>
-                  <h4 class="c-title mb-0">Projects of the Month</h4>
+                  <h4 class="c-title mb-0 ps-2">Projects of the Month</h4>
                 </div>
                 <div>
                   <select class="form-select card-select border-0 shadow-none select-position"
@@ -724,7 +721,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Elite Admin</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$3.9K</td>
                   </tr>
 
@@ -741,7 +738,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Real Homes WP Theme</td>
-                    <td><span class="medium-badge align-middle">Medium</span></td>
+                    <td><span class="badge text-primary bg-light-blue align-middle">Medium</span></td>
                     <td class="budget align-middle">$24.5K</td>
                   </tr>
 
@@ -758,7 +755,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">MedicalPro WP Theme</td>
-                    <td><span class="high-badge align-middle">High</span></td>
+                    <td><span class="badge align-middle text-danger bg-light-red">High</span></td>
                     <td class="budget align-middle">$12.8K</td>
                   </tr>
 
@@ -775,7 +772,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Hosting Press HTML</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$2.4K</td>
                   </tr>
 
@@ -792,7 +789,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Helping Hands WP Theme</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$9.3K</td>
                   </tr>
 
@@ -809,7 +806,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle border-0">MedicalPro WP Theme</td>
-                    <td class="border-0"><span class="high-badge align-middle">High</span></td>
+                    <td class="border-0"><span class="align-middle text-danger bg-light-red badge">High</span></td>
                     <td class="budget border-0 align-middle">$2.6K</td>
                   </tr>
                 </tbody>
@@ -827,7 +824,7 @@
             <div class="card-box">
               <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
                 <div>
-                  <h4 class="c-title mt-1">Weather Report</h4>
+                  <h4 class="c-title mt-1 mb-0 mb-sm-2">Weather Report</h4>
                 </div>
                 <div>
                   <select class="form-select card-select border-0 shadow-none text-truncate"
@@ -839,14 +836,64 @@
                   </select>
                 </div>
               </div>
-              <div>
-                <div>
-                  <div>
+              <div class="px-3 pt-4 pb-3">
+                <div class="d-flex mb-4 justify-content-center justify-content-sm-start flex-column flex-sm-row align-items-center">
+                  <div class="d-flex">
                     <div><img src="./images/wweather-icon.png" alt=""></div>
-                    <h3 class="degree">73&deg<span class="F">F</span></h3>
+                    <h3 class="degree mb-0">73&deg<span class="F">F</span></h3>
                   </div>
-                  
-                  <div></div>
+                  <div>
+                    <h4 class="mb-0 week-day">Saturday</h4>
+                    <p class="mb-0 weather-location">Ahmedabad, India</p>
+                  </div>
+                </div>
+                <div>
+                  <table class="w-100 text-center text-sm-start">
+                    <tr>
+                      <td class="weather-component-key border-0 py-2">Wind</td>
+                      <td class="border-0 weather-component-value py-2">ESE 17 mph</td>
+                    </tr>
+                    <tr>
+                      <td class="weather-component-key border-0 py-2">Humidity</td>
+                      <td class="border-0 weather-component-value py-2">83%</td>
+                    </tr>
+                    <tr>
+                      <td class="weather-component-key border-0 py-2">Pressure</td>
+                      <td class="border-0 weather-component-value py-2">28.56 in</td>
+                    </tr>
+                    <tr>
+                      <td class="weather-component-key border-0 py-2">Cloud</td>
+                      <td class="border-0 weather-component-value py-2">78%</td>
+                    </tr>
+                    <tr>
+                      <td class="weather-component-key border-0 py-2">Ceiling</td>
+                      <td class="border-0 weather-component-value py-2">25760 ft</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card-box border-top-0 ">
+              <div class="d-flex justify-content-around justify-content-xl-between py-1 px-4">
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/w-70.png" alt=""></a>
+                  <p class="my-2 weather-time">09:30</p>
+                  <h5 class="degree-weather">70&deg</h5>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/w-71.png" alt=""></a>
+                  <p class="my-2 weather-time">11:30</p>
+                  <h5 class="degree-weather">71&deg</h5>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/w-72.png" alt=""></a>
+                  <p class="my-2 weather-time">13:30</p>
+                  <h5 class="degree-weather">72&deg</h5>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/w-78.png" alt=""></a>
+                  <p class="my-2 weather-time">15:30</p>
+                  <h5 class="degree-weather">78&deg</h5>
                 </div>
               </div>
             </div>
@@ -854,6 +901,156 @@
           <!-----------------------------------------------
             End Recent Activities
           ------------------------------------------------->
+        </div>
+      </div>
+
+      <div>
+        <div class="row gx-3">
+          <div class="col-xl-6 mb-3 mb-xl-0">
+            <div class="card-box h-100">
+              <div class="d-flex justify-content-center justify-content-sm-start">
+                <h4 class="c-title mb-3">Recent Comments</h4>
+              </div>
+              <div class="d-flex p-3 table-left-border">
+                <div class="me-3">
+                  <div><img src="./images/james-img.png" alt=""></div>
+                </div>
+                <div class="my-1">
+                  <a class="mb-0 asigned-user-name text-decoration-none">James Anderson</a>
+                  <p class="t-user-name mt-2 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                  <div class="d-flex justify-content-between flex-sm-row flex-column">
+                    <div class="d-flex flex-sm-row flex-column">
+                      <div class="badge bg-light-blue text-primary px-4 mb-2 mb-sm-0">Pending</div>
+                      <div class="px-1 align-items-center like-edit-btn">
+                        <img class="px-1" src="./images/edit-btn.png" alt="">
+                        <img class="px-1" src="./images/close-btn.png" alt="">
+                        <img class="px-1" src="./images/heart-btn.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mb-0 date">April 14, 2016</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex p-3 table-left-border">
+                <div class="me-3">
+                  <div><img src="./images/michel-img.png" alt=""></div>
+                </div>
+                <div class="my-1">
+                  <a class="mb-0 asigned-user-name text-decoration-none">Michael Jorden</a>
+                  <p class="t-user-name mt-2 mb-3">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                  <div class="d-flex justify-content-between flex-sm-row flex-column">
+                    <div class="d-flex flex-sm-row flex-column">
+                      <div class="badge bg-light-green text-success px-4 mb-2 mb-sm-0">Approved</div>
+                      <div class="px-1 align-items-center like-edit-btn">
+                        <img class="px-1" src="./images/edit-btn.png" alt="">
+                        <img class="px-1" src="./images/close-btn.png" alt="">
+                        <img class="px-1" src="./images/heart-btn.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mb-0 date">April 14, 2016</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex p-3 table-left-border">
+                <div class="me-3">
+                  <div><img src="./images/johnathan.png" alt=""></div>
+                </div>
+                <div class="my-1">
+                  <a class="mb-0 asigned-user-name text-decoration-none">Johnathan Doeting</a>
+                  <p class="t-user-name mt-2 mb-3">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                  <div class="d-flex justify-content-between flex-sm-row flex-column">
+                    <div class="d-flex flex-sm-row flex-column">
+                      <div class="badge bg-light-red text-danger px-4 mb-2 mb-sm-0">Rejected</div>
+                      <div class="px-1 align-items-center like-edit-btn">
+                        <img class="px-1 hi" src="./images/edit-btn.png" alt="">
+                        <img class="px-1" src="./images/close-btn.png" alt="">
+                        <img class="px-1" src="./images/heart-btn.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mb-0 date">April 14, 2016</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card-box h-100">
+              <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center mb-3">
+                <div>
+                  <h4 class="c-title mt-1 mb-0 mb-sm-2">Weather Report</h4>
+                </div>
+                <div>
+                  <select class="form-select card-select border-0 shadow-none text-truncate"
+                    aria-label="Default select example">
+                    <option selected>This Week</option>
+                    <option value="1">tomorrow</option>
+                    <option value="2">yesterday</option>
+                    <option value="3">Today</option>
+                  </select>
+                </div>
+              </div>
+              <div class="line-height-checkbox">
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label t-user-name t-user-name" for="flexCheckDefault1">
+                      Simply dummy text of the printing and typesetting
+                      <span class="badge bg-light-green text-success px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label t-user-name" for="flexCheckDefault2">
+                      Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been.
+                      <span class="badge bg-light-red text-danger px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label t-user-name" for="flexCheckDefault3">
+                      Ipsum is simply dummy text of the printing
+                      <span class="badge bg-light-blue text-primary px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault4">
+                    <label class="form-check-label t-user-name" for="flexCheckDefault4">
+                      Simply dummy text of the printing and typesetting
+                      <span class="badge bg-light-yellow text-warning px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="form-check-label t-user-name" for="flexCheckDefault5">
+                      Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been.
+                      <span class="badge bg-light-purple text-purple px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-3 table-left-border">
+                  <div class="form-check">
+                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault6">
+                    <label class="form-check-label t-user-name" for="flexCheckDefault6">
+                      Ipsum is simply dummy text of the printing
+                      <span class="badge bg-light-green text-success px-3 ms-2">Project</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout-link my-2 px-3"><a href="#" class="full-activity-link text-decoration-none">Checkout Full
+                  List</a>
+                </div>
+              </div>
+            </div>
+              
+          </div>
         </div>
       </div>
 

@@ -8,11 +8,6 @@
 
   <!-- Bootstrap CSS -->
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="./apexcharts-bundle/dist/apexcharts.css">
   <link rel="icon" type="image/png" href="./images/logo-icon.png" />
@@ -618,7 +613,7 @@
                 Start Sales of the Month
               ------------------------------------------------->
               <div class="col-md-6 col-xl mb-3 mb-md-0">
-                <div class="card-box h-100 ">
+                <div class="card-box h-100">
                   <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
                     <div>
                       <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
@@ -633,26 +628,26 @@
                       </select>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center my-4">
+                  <div class="d-flex justify-content-center my-3">
                     <div class="position-relative">
                       <div class="set-ring d-sm-block d-none"><img class="img-fluid" src="./images/ring.png" alt=""></div>
                       <div class="total d-sm-block d-none">
                         <h4 class="total-per">65%</h4>
                         <p class="total-sale-jan">160 Sales January</p>
                       </div>
-                      <div id="sale-of-the-month-chart"></div>
+                      <div class="d-flex justify-content-sm-end justify-content-center" id="sale-of-the-month-chart"></div>
                     </div>
                   </div>
                   <div class="tags mb-2">
                     <div class="row">
                       <div class="col">
-                        <div class="d-flex align-items-center mb-2">
+                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
                           <div class="b-purple-dot me-2"></div>
                           <p class="tag-p mb-0">Organic</p>
                         </div>
                       </div>
                       <div class="col">
-                        <div class="d-flex align-items-center mb-2">
+                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
                           <div class="b-blue-dot me-2"></div>
                           <p class="tag-p mb-0">Marketing</p>
                         </div>
@@ -660,7 +655,7 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <div class="d-flex align-items-center mb-md-2">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
                           <div class="b-green-dot me-2"></div>
                           <p class="tag-p mb-0">Search Engine</p>
                         </div>
@@ -694,20 +689,20 @@
                         </select>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between px-4 mb-md-2">
-                      <div class="py-4">
+                    <div class="d-flex justify-content-between flex-column flex-sm-row px-4 pe-xl-0 ">
+                      <div class="py-4 text-sm-start text-center">
                         <h6 class="card-total-counts mb-1">$4316</h6>
                         <p class="total-sales mb-0">(150-165 Sales)</p>
                       </div>
                       <div>
                         <!-- <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt=""> -->
-                        <div id="sale-diff-chart"></div>
+                        <div id="sale-diff-chart" class="d-flex justify-content-center"></div>
                       </div>
                     </div>
                   </div>
                   <div class="card-box px-md-0 py-3">
                     <div
-                      class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
+                      class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-3 mb-sm-4">
                       <div>
                         <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
                       </div>
@@ -721,13 +716,13 @@
                         </select>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between px-4 mb-md-1">
-                      <div class="py-4">
+                    <div class="d-flex justify-content-between flex-column flex-sm-row pe-xl-0 px-4">
+                      <div class="py-4 text-sm-start text-center">
                         <h6 class="card-total-counts mb-1">$3528</h6>
                         <p class="total-sales mb-0">(150-165 Sales)</p>
                       </div>
                       <div>
-                        <div id="sales-prediction"></div>
+                        <div id="sales-prediction" class="d-flex justify-content-center"></div>
                       </div>
                     </div>
                   </div>
@@ -745,7 +740,7 @@
           ------------------------------------------------->
           <div class="col-xl-4">
             <div class="card-box side-p">
-              <div class="d-flex flex-xl-row flex-column justify-content-between mt-3 ">
+              <div class="d-flex flex-xl-row flex-column justify-content-between mt-3">
                 <div class="d-flex justify-content-center mb-3 mb-xl-0">
                   <div><img class="img-fluid " src="./images/danil-pic.png" alt=""></div>
                 </div>
@@ -808,10 +803,10 @@
             Start Projects of the Month
           ------------------------------------------------->
           <div class="col-xl-8 mb-3 mb-xl-0">
-            <div class="card-box pb-0 overflow-auto h-100">
+            <div class="card-box pb-0 overflow-auto h-100 px-sm-4">
               <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
                 <div>
-                  <h4 class="c-title mb-0">Projects of the Month</h4>
+                  <h4 class="c-title mb-0 ps-2">Projects of the Month</h4>
                 </div>
                 <div>
                   <select class="form-select card-select border-0 shadow-none select-position"
@@ -847,7 +842,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Elite Admin</td>
-                    <td><span class="badge align-middle text-danger">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$3.9K</td>
                   </tr>
 
@@ -864,7 +859,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Real Homes WP Theme</td>
-                    <td><span class="medium-badge align-middle">Medium</span></td>
+                    <td><span class="badge text-primary bg-light-blue align-middle">Medium</span></td>
                     <td class="budget align-middle">$24.5K</td>
                   </tr>
 
@@ -881,7 +876,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">MedicalPro WP Theme</td>
-                    <td><span class="high-badge align-middle">High</span></td>
+                    <td><span class="badge align-middle text-danger bg-light-red">High</span></td>
                     <td class="budget align-middle">$12.8K</td>
                   </tr>
 
@@ -898,7 +893,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Hosting Press HTML</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$2.4K</td>
                   </tr>
 
@@ -915,7 +910,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle">Helping Hands WP Theme</td>
-                    <td><span class="low-badge align-middle">Low</span></td>
+                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
                     <td class="budget align-middle">$9.3K</td>
                   </tr>
 
@@ -932,7 +927,7 @@
                       </div>
                     </td>
                     <td class="t-user-name align-middle border-0">MedicalPro WP Theme</td>
-                    <td class="border-0"><span class="high-badge align-middle">High</span></td>
+                    <td class="border-0"><span class="align-middle text-danger bg-light-red badge">High</span></td>
                     <td class="budget border-0 align-middle">$2.6K</td>
                   </tr>
                 </tbody>
@@ -948,8 +943,8 @@
           ------------------------------------------------->
           <div class="col-xl-4">
             <div class="card-box px-sm-4">
-              <div>
-                <h4 class="c-title mb-4 mt-1">Recent Activities</h4>
+              <div class="d-flex justify-content-center justify-content-sm-start">
+                <h4 class="c-title mb-4 mt-1 ps-0">Recent Activities</h4>
               </div>
               <div class="d-flex align-items-center activities-margin">
                 <div class="me-3"><img class="img-fluid" src="./images/jullian-pic.png" alt=""></div>

@@ -172,7 +172,7 @@ var options_sales_of_the_month = {
 var options_sales_prediction = {
   series: [100],
   chart: {
-  width: 220,
+  width: 200,
   type: 'radialBar',
   offsetY: -20,
   sparkline: {
