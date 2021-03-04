@@ -187,6 +187,9 @@
 }
 .sale-comp {
   margin-bottom: 30px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 10px;
+  }
 }
 .footer-p {
   font-size: $font-14;
@@ -229,11 +232,12 @@
 }
 .tags2 {
   padding: 34px 0;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0;
+  }
 }
 #sale-of-the-month-chart {
   width: 325px;
-  // display: flex;
-  // justify-content: flex-end;
 }
 .set-ring2 {
   position: absolute;
@@ -247,7 +251,7 @@
 }
 .degree {
   font-size: 48px;
-  color: rgb(0, 158, 251);
+  color: $blue-color;
   font-weight: 300;
   margin-right: 34px;
 }
@@ -305,7 +309,7 @@
 .line-height-checkbox {
   line-height: 24px;
 }
-.form-check:hover label{
+.table-left-border:hover .form-check label{
   font-weight: $font-weight-bold;
 }
 

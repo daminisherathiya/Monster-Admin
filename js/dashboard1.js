@@ -186,6 +186,7 @@ plotOptions: {
     hollow: {
       size: '45%',
     },
+    
     track: {
       strokeWidth: '97%',
       margin: 5, // margin is in pixels
