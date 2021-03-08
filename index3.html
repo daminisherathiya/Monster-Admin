@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="./apexcharts-bundle/dist/apexcharts.css">
   <link rel="icon" type="image/png" href="./images/logo-icon.png" />
   <link rel="stylesheet" href="./css/css-chart.css">
   <title>Monster Admin</title>
@@ -228,7 +227,7 @@
         </li>
         <li class="nav-divider"></li>
         <li>
-          <div class="d-flex w-100 sidebar-link ps-0 align-items-center">
+          <div class="d-flex w-100 side-li align-items-center">
             <span class="sidebar-title ps-4">PROFESSIONAL</span>
             <span class="nav-small-cap">...</span>
           </div>
@@ -419,7 +418,7 @@
         </li>
         <li class="nav-divider"></li>
         <li>
-          <div class="d-flex w-100 sidebar-link ps-0 align-items-center">
+          <div class="d-flex w-100 side-li align-items-center">
             <span class="sidebar-title ps-4">SUPPORT</span>
           </div>
         </li>
@@ -501,18 +500,98 @@
       ------------------------------------------------->
 
       <!-----------------------------------------------
-        Start Total Revenue
+        Start progress section
       ------------------------------------------------->
       <div>
         <div class="row gx-3">
-          <div class="col-xl-6">
-            <div class="chart-box mb-3">
-              <div class="chart-container">
-                <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center sale-comp">
-                  <div>
-                    <h4 class="chart-h chart-h-sm mb-0">Total Revenue</h4>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="d-flex justify-content-between progress-box h-100">
+              <div class="px-1">
+                <div class="d-flex align-items-center">
+                  <h6 class="total-counts">2376</h6>
+                  <div class="ms-2 red-arrow">
+                    <img src="./images/dropdown-arrow.png" alt="">
                   </div>
-                  <div class="d-flex flex-column flex-sm-row">
+                </div>
+                <p class="new-items mb-0 px-1">Total Visits</p>
+              </div>
+              <div id="total-visit"></div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="d-flex progress-box justify-content-between h-100">
+              <div>
+                <div class="d-flex align-items-center">
+                  <h6 class="total-counts">9670</h6>
+                  <div class="ms-2">
+                    <img src="./images/up-arrow.png" alt="">
+                  </div>
+                </div>
+                <p class="new-items mb-0 px-1">Total Page Views</p>
+              </div>
+              <div>
+                <div id="total-page-views"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="d-flex progress-box justify-content-between h-100">
+              <div>
+                <div class="d-flex align-items-center">
+                  <h6 class="total-counts">1562</h6>
+                  <div class="ms-2">
+                    <img src="./images/up-arrow.png" alt="">
+                  </div>
+                </div>
+                <p class="new-items mb-0 px-1">Unique Visits</p>
+              </div>
+              <div>
+                  <div id="unique-visits"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="d-flex progress-box justify-content-between h-100">
+              <div>
+                <div class="d-flex align-items-center">
+                  <h6 class="total-counts">35%</h6>
+                  <div class="ms-2 red-arrow">
+                    <img src="./images/dropdown-arrow.png" alt="">
+                  </div>
+                </div>
+                <p class="new-items mb-0 px-1">Bounce Rate</p>
+              </div>
+              <div>
+                <div id="bounce-rate"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------------------
+        End progress section
+      ------------------------------------------------->
+
+      <!-----------------------------------------------
+        Start Sales Comparison
+      ------------------------------------------------->
+      <div>
+        <div class="row gx-3">
+          <div class="col-xl-8 mb-3">
+            <div class="card-box h-100">
+              <div class="">
+                <div class="d-flex flex-md-row flex-column justify-content-between sale-comp align-items-center">
+                  <div class="ps-3">
+                    <h4 class="chart-h mb-0 mt-1">Total Revenue</h4>
+                    <select class="form-select shadow-none myselecet border-0 bg-white d-inline-block p-0"
+                      aria-label="Default select example">
+                      <option selected>January 2017</option>
+                      <option value="1">February 2017</option>
+                      <option value="2">March 2017</option>
+                      <option value="3">April 2017</option>
+                    </select>
+                  </div>
+                  <div class="d-flex flex-lg-row flex-column">
                     <div class="d-flex align-items-center">
                       <div class="green-dot"></div>
                       <p class="dot-p mb-0">Billed Invoices</p>
@@ -525,62 +604,60 @@
                 </div>
                 <div>
                   <!-- <img class="img-fluid w-100 mb-2" src="./images/chart.png" alt=""> -->
-                  <div id="chart"></div>
+                  <div id="total-revenue"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
-            <div class="row gx-3 h-100">
-              <div class="col-sm-6 mb-3">
-                <div class="d-flex justify-content-between align-items-center progress-box h-100">
-                  <div class="px-1">
-                    <h6 class="total-counts">86</h6>
-                    <p class="new-items mb-0 px-1">New Clients</p>
-                  </div>
-                  <div class="col text-end align-self-center">
-                    <div data-label="26%" class="css-bar mb-0 css-bar-info css-bar-20"></div>
-                    <!-- <div id="new-client"></div> -->
-                  </div>
+          <div class="col-xl-4">
+            <div class="card-box side-p">
+              <div class="d-flex flex-xl-row flex-column justify-content-between mt-3">
+                <div class="d-flex justify-content-center mb-3 mb-xl-0">
+                  <div><img class="img-fluid " src="./images/danil3-pic.png" alt=""></div>
+                </div>
+                <div class="pe-xl-3 text-center text-xl-start ms-xl-3">
+                  <a href="#" class="text-decoration-none">
+                    <h4 class="daniel-pro mb-0 ps-0 text-nowrap">Daniel Kristeen</h4>
+                  </a>
+                  <p class="uiux-design">UIUX Designer</p>
+                  <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png"
+                      alt="">Follow</button>
                 </div>
               </div>
-              <div class="col-sm-6 mb-3">
-                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
-                  <div>
-                    <h6 class="total-counts">248</h6>
-                    <p class="new-items mb-0 px-1">New Projects</p>
-                  </div>
-                  <div>
-                    <div class="col text-end align-self-center">
-                      <div data-label="26%" class="css-bar mb-0 css-bar-success css-bar-20"></div>
-                    </div>
-                  </div>
+
+              <div class="d-flex mt-4 mb-1 justify-content-center justify-content-xl-start">
+                <div class="text-center">
+                  <h6 class="card-total-counts mb-1">14</h6>
+                  <p class="p-tag mb-0">Photos</p>
+                </div>
+                <div class="seprator text-center">
+                  <h6 class="card-total-counts mb-1">54</h6>
+                  <p class="p-tag mb-0">Videos</p>
+                </div>
+                <div class="text-center">
+                  <h6 class="card-total-counts mb-1">145</h6>
+                  <p class="p-tag mb-0">Tasks</p>
                 </div>
               </div>
-              <div class="col-sm-6 mb-3">
-                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
-                  <div>
-                    <h6 class="total-counts">352</h6>
-                    <p class="new-items mb-0 px-1">Open Projects</p>
-                  </div>
-                  <div>
-                    <div class="col text-end ">
-                      <div data-label="26%" class="css-bar mb-0 css-bar-primary css-bar-20"></div>
-                    </div>
-                  </div>
+            </div>
+            <div class="card-box border-top-0 side-p mb-3">
+              <p class="profile-p text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore </p>
+              <div class="d-flex  justify-content-around justify-content-xl-between pt-2 pb-1">
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/earth.png" alt=""></a>
                 </div>
-              </div>
-              <div class="col-sm-6 mb-3">
-                <div class="d-flex progress-box justify-content-between  align-items-center h-100">
-                  <div>
-                    <h6 class="total-counts">159</h6>
-                    <p class="new-items mb-0 px-1">New Invoices</p>
-                  </div>
-                  <div>
-                    <div class="col text-end align-self-center">
-                      <div data-label="26%" class="css-bar mb-0 css-bar-danger css-bar-20"></div>
-                    </div>
-                  </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/twitter.png" alt=""></a>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/facebook.png" alt=""></a>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/facebook.png" alt=""></a>
+                </div>
+                <div class="icon-hover">
+                  <a href="#"><img src="./images/linkedin.png" alt=""></a>
                 </div>
               </div>
             </div>
@@ -588,468 +665,158 @@
         </div>
       </div>
       <!-----------------------------------------------
-        End Total Revenue
+        End Sales Comparison
       ------------------------------------------------->
 
-      <div class="row gx-3">
-        <div class="col-xl-6 mb-3">
-          <div class="card-box h-100 ">
-            <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
-              <div>
-                <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
-              </div>
-              <div>
-                <select class="form-select card-select border-0 shadow-none text-truncate"
-                  aria-label="Default select example">
-                  <option selected>January 2017</option>
-                  <option value="1">February 2017</option>
-                  <option value="2">March 2017</option>
-                  <option value="3">April 2017</option>
-                </select>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center my-2 mt-sm-4 mb-3">
-              <div>  
-                <div class="d-flex justify-content-sm-between justify-content-start flex-column flex-sm-row">
-                  <div class="position-relative align-self-start">
-                    <div class="set-ring2 d-sm-block d-none"><img class="img-fluid" src="./images/ring2.png" alt=""></div>
-                    <div class="trolly d-sm-block d-none">
-                      <img src="./images/trolly-icon.png" alt="">
-                    </div>
-                    <div class="d-flex justify-content-sm-end justify-content-center" id="sale-of-the-month-chart"></div>
-                  </div>        
-                  <div class="tags2">
-                    <h4 class="total-per text-start mb-0 text-center text-sm-start">65%</h4>
-                    <p class="total-sale-jan text-start mb-4 text-center text-sm-start">160 Sales January</p>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
-                          <div class="b-purple-dot me-2"></div>
-                          <p class="tag-p mb-0">Organic Sales</p>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
-                          <div class="b-blue-dot me-2"></div>
-                          <p class="tag-p mb-0">Search Engine Sales</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="d-flex align-items-center mb-md-2 justify-content-center justify-content-sm-start">
-                          <div class="b-green-dot me-2"></div>
-                          <p class="tag-p mb-0">Marketing Campaign</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 mb-3">
-          <div class="chart-box h-100">
-            <div class="chart-container2">
-              <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
-                <div>
-                  <h4 class="chart-h chart-h-sm mb-0">Income of the Year</h4>
-                </div>
-                <div class="d-flex flex-sm-row flex-column">
-                  <div class="d-flex align-items-center">
-                    <div class="green-dot"></div>
-                    <p class="dot-p mb-0">Growth Income</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div class="blue-dot"></div>
-                    <p class="dot-p mb-0 pe-0">Net Income</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <!-- <img class="img-fluid w-100 mb-2" src="./images/chart.png" alt=""> -->
-                <div id="income-of-the-year"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div>
-        <div class="row gx-3 mb-3">
-          <!-----------------------------------------------
-            Start Projects of the Month
-          ------------------------------------------------->
-          <div class="col-xl-8 mb-3 mb-xl-0">
-            <div class="card-box pb-0 overflow-auto h-100 px-sm-4">
-              <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
-                <div>
-                  <h4 class="c-title mb-0 ps-2">Projects of the Month</h4>
-                </div>
-                <div>
-                  <select class="form-select card-select border-0 shadow-none select-position"
-                    aria-label="Default select example">
-                    <option selected>January 2017</option>
-                    <option value="1">February 2017</option>
-                    <option value="2">March 2017</option>
-                    <option value="3">April 2017</option>
-                  </select>
-                </div>
+        <div class="row gx-3">
+          <div class="col-xl-6 mb-3">
+            <div class="card-box px-md-4">
+              <div class="d-flex justify-content-center justify-content-sm-start">
+                <h4 class="c-title mb-4 mt-3 ps-0">Recent Chats</h4>
               </div>
-              <table class="table text-nowrap">
-                <thead>
-                  <tr class="">
-                    <th class="table-header th-1" scope="col">Assigned</th>
-                    <th class="table-header th-2" scope="col">Name</th>
-                    <th class="table-header th-3" scope="col">Priority</th>
-                    <th class="table-header th-4" scope="col">Budget</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/sunil-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Sunil Joshi</h4>
-                          </a>
-                          <p class="user-work mb-0">Web Designer</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Elite Admin</td>
-                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
-                    <td class="budget align-middle">$3.9K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/andrev-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Andrew MacDownland</h4>
-                          </a>
-                          <p class="user-work mb-0">Project Manager</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Real Homes WP Theme</td>
-                    <td><span class="badge text-primary bg-light-blue align-middle">Medium</span></td>
-                    <td class="budget align-middle">$24.5K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/charis-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Christopher Jamil</h4>
-                          </a>
-                          <p class="user-work mb-0">SEO Manager</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">MedicalPro WP Theme</td>
-                    <td><span class="badge align-middle text-danger bg-light-red">High</span></td>
-                    <td class="budget align-middle">$12.8K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/nirav-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Nirav Joshi</h4>
-                          </a>
-                          <p class="user-work mb-0">Frontend Engineer</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Hosting Press HTML</td>
-                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
-                    <td class="budget align-middle">$2.4K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/micheal-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Micheal Doe</h4>
-                          </a>
-                          <p class="user-work mb-0">Content Writerr</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle">Helping Hands WP Theme</td>
-                    <td><span class="badge align-middle text-success bg-light-green">Low</span></td>
-                    <td class="budget align-middle">$9.3K</td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-left-border border-bottom-0">
-                      <div class="d-flex align-items-center">
-                        <div><img class="me-2" src="./images/johnat-pic.png" alt=""></div>
-                        <div>
-                          <a href="#" class="text-decoration-none">
-                            <h4 class="mb-0 asigned-user-name">Johnathan Rhodes</h4>
-                          </a>
-                          <p class="user-work mb-0">Digital Agency PSD</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="t-user-name align-middle border-0">MedicalPro WP Theme</td>
-                    <td class="border-0"><span class="align-middle text-danger bg-light-red badge">High</span></td>
-                    <td class="budget border-0 align-middle">$2.6K</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-----------------------------------------------
-            End Projects of the Month
-          ------------------------------------------------->
-
-          <!-----------------------------------------------
-            Start Recent Activities
-          ------------------------------------------------->
-          <div class="col-xl-4">
-            <div class="card-box">
-              <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
+              <div>
                 <div>
-                  <h4 class="c-title mt-1 mb-0 mb-sm-2">Weather Report</h4>
-                </div>
-                <div>
-                  <select class="form-select card-select border-0 shadow-none text-truncate"
-                    aria-label="Default select example">
-                    <option selected>Today</option>
-                    <option value="1">tomorrow</option>
-                    <option value="2">yesterday</option>
-                    <option value="3">April 2017</option>
-                  </select>
-                </div>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <div class="d-flex mb-4 justify-content-center justify-content-sm-start flex-column flex-sm-row align-items-center">
                   <div class="d-flex">
-                    <div><img src="./images/wweather-icon.png" alt=""></div>
-                    <h3 class="degree mb-0">73&deg<span class="F">F</span></h3>
-                  </div>
-                  <div>
-                    <h4 class="mb-0 week-day">Saturday</h4>
-                    <p class="mb-0 weather-location">Ahmedabad, India</p>
+                    <div class="me-3"><img src="./images/james-img.png" alt=""></div>
+                    <div class="w-100">
+                      <h4 class="chat-user-name">James Anderson</h4>
+                      <div class="d-flex justify-content-between flex-column flex-sm-row">
+                        <p class="t-user-name chat-blue-bg p-2 me-sm-3 mb-sm-4 mb-2">Lorem Ipsum is simply dummy text of the printing & type setting industry. Lorem Ipsum has been.</p>
+                        <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div>
-                  <table class="w-100 text-center text-sm-start">
-                    <tr>
-                      <td class="weather-component-key border-0 py-2">Wind</td>
-                      <td class="border-0 weather-component-value py-2">ESE 17 mph</td>
-                    </tr>
-                    <tr>
-                      <td class="weather-component-key border-0 py-2">Humidity</td>
-                      <td class="border-0 weather-component-value py-2">83%</td>
-                    </tr>
-                    <tr>
-                      <td class="weather-component-key border-0 py-2">Pressure</td>
-                      <td class="border-0 weather-component-value py-2">28.56 in</td>
-                    </tr>
-                    <tr>
-                      <td class="weather-component-key border-0 py-2">Cloud</td>
-                      <td class="border-0 weather-component-value py-2">78%</td>
-                    </tr>
-                    <tr>
-                      <td class="weather-component-key border-0 py-2">Ceiling</td>
-                      <td class="border-0 weather-component-value py-2">25760 ft</td>
-                    </tr>
-                  </table>
+                  <div class="d-flex">
+                    <div class="me-3"><img src="./images/michel-img.png" alt=""></div>
+                    <div class="w-100">
+                      <h4 class="chat-user-name">Bianca Doe</h4>
+                      <div class="d-flex justify-content-between flex-column flex-sm-row">
+                        <p class="t-user-name chat-green-bg p-2 me-sm-3 mb-sm-4 mb-2">It’s Great opportunity to work.</p>
+                        <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-box border-top-0 ">
-              <div class="d-flex justify-content-around justify-content-xl-between py-1 px-4">
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/w-70.png" alt=""></a>
-                  <p class="my-2 weather-time">09:30</p>
-                  <h5 class="degree-weather">70&deg</h5>
+                <div class="d-flex justify-content-end flex-column flex-sm-row">
+                  <p class="t-user-name chat-gray-bg p-2 me-sm-3 mb-sm-4 mb-2">I would love to join the team.</p>
+                  <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
                 </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/w-71.png" alt=""></a>
-                  <p class="my-2 weather-time">11:30</p>
-                  <h5 class="degree-weather">71&deg</h5>
+                <div class="d-flex justify-content-end flex-column flex-sm-row">
+                  <p class="t-user-name chat-gray-bg p-2 me-sm-3 mb-sm-4 mb-2">Whats budget of the new project.</p>
+                  <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
                 </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/w-72.png" alt=""></a>
-                  <p class="my-2 weather-time">13:30</p>
-                  <h5 class="degree-weather">72&deg</h5>
-                </div>
-                <div class="icon-hover">
-                  <a href="#"><img src="./images/w-78.png" alt=""></a>
-                  <p class="my-2 weather-time">15:30</p>
-                  <h5 class="degree-weather">78&deg</h5>
+                <div>
+                  <div class="d-flex">
+                    <div class="me-3"><img src="./images/johnathan.png" alt=""></div>
+                    <div class="w-100">
+                      <h4 class="chat-user-name">Angelina Rhodes</h4>
+                      <div class="d-flex justify-content-between flex-column flex-sm-row">
+                        <p class="t-user-name chat-purple-bg p-2 me-sm-3 mb-sm-4 mb-2">Well we have good budget for the project</p>
+                        <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-----------------------------------------------
-            End Recent Activities
-          ------------------------------------------------->
+          <div class="col-xl-6 mb-3">
+            <div class="card-box h-100">
+              <div class="d-flex justify-content-center justify-content-sm-start">
+                <h4 class="c-title my-3 ps-3">Recent Messages</h4>
+              </div>
+              <div class="d-flex px-sm-3 py-2">
+                <div class="me-3 position-relative">
+                  <div><img src="./images/james-img.png" alt=""></div>
+                  <div class="blue-dot position-absolute dot-position"></div>
+                </div>
+                <div>
+                  <a class="mb-0 asigned-user-name text-decoration-none">James Anderson</a>
+                  <p class="t-user-name mt-1 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                  <div><p class="chat-time mb-0">10:56 am</p></div>
+                </div>
+              </div>
+              <div class="d-flex px-sm-3 py-2">
+                <div class="me-3 position-relative">
+                  <div><img src="./images/michel-img.png" alt=""></div>
+                  <div class="green-dot position-absolute dot-position"></div>
+                </div>
+                <div>
+                  <a class="mb-0 asigned-user-name text-decoration-none">Michael Jorden</a>
+                  <p class="t-user-name mt-1 mb-2">Welcome to the Elite Admin</p>
+                  <div><p class="chat-time mb-0">10:56 am</p></div>
+                </div>
+              </div>
+              <div class="d-flex px-sm-3 py-2">
+                <div class="me-3 position-relative">
+                  <div><img src="./images/ricky-pic.png" alt=""></div>
+                  <div class="purple-dot position-absolute dot-position"></div>
+                </div>
+                <div>
+                  <a class="mb-0 asigned-user-name text-decoration-none">Ricky Johnathan</a>
+                  <p class="t-user-name mt-1 mb-2">Welcome to the Elite Admin</p>
+                  <div><p class="chat-time mb-0">10:56 am</p></div>
+                </div>
+              </div>
+              <div class="d-flex px-sm-3 py-2">
+                <div class="me-3 position-relative">
+                  <div><img src="./images/johnathan.png" alt=""></div>
+                  <div class="yellow-dot position-absolute dot-position"></div>
+                </div>
+                <div>
+                  <a class="mb-0 asigned-user-name text-decoration-none">Johnathan Doeting</a>
+                  <p class="t-user-name mt-1 mb-2">Simply dummy text of the printing and typesetting industry.</p>
+                  <div><p class="chat-time mb-0">10:56 am</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div>
         <div class="row gx-3">
-          <div class="col-xl-6 mb-3 mb-xl-0">
-            <div class="card-box h-100">
-              <div class="d-flex justify-content-center justify-content-sm-start">
-                <h4 class="c-title mb-3">Recent Comments</h4>
-              </div>
-              <div class="d-flex p-3 table-left-border">
-                <div class="me-3">
-                  <div><img src="./images/james-img.png" alt=""></div>
+          <div class="col-md-4 mb-3">
+            <div class="card-box p-0 h-100">
+              <div><img class="img-fluid w-100" src="./images/f1.png" alt=""></div>
+              <div class="feature-box">
+                <div class="d-flex mb-2 flex-xl-row flex-column">
+                  <p class="me-xl-4">20 May 2016</p>
+                  <p>3 Comments</p>
                 </div>
-                <div class="my-1">
-                  <a class="mb-0 asigned-user-name text-decoration-none">James Anderson</a>
-                  <p class="t-user-name mt-2 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                  <div class="d-flex justify-content-between flex-sm-row flex-column">
-                    <div class="d-flex flex-sm-row flex-column">
-                      <div class="badge bg-light-blue text-primary px-4 mb-2 mb-sm-0">Pending</div>
-                      <div class="px-1 align-items-center like-edit-btn">
-                        <img class="px-1" src="./images/edit-btn.png" alt="">
-                        <img class="px-1" src="./images/close-btn.png" alt="">
-                        <img class="px-1" src="./images/heart-btn.png" alt="">
-                      </div>
-                    </div>
-                    <p class="mb-0 date">April 14, 2016</p>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex p-3 table-left-border">
-                <div class="me-3">
-                  <div><img src="./images/michel-img.png" alt=""></div>
-                </div>
-                <div class="my-1">
-                  <a class="mb-0 asigned-user-name text-decoration-none">Michael Jorden</a>
-                  <p class="t-user-name mt-2 mb-3">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                  <div class="d-flex justify-content-between flex-sm-row flex-column">
-                    <div class="d-flex flex-sm-row flex-column">
-                      <div class="badge bg-light-green text-success px-4 mb-2 mb-sm-0">Approved</div>
-                      <div class="px-1 align-items-center like-edit-btn">
-                        <img class="px-1" src="./images/edit-btn.png" alt="">
-                        <img class="px-1" src="./images/close-btn.png" alt="">
-                        <img class="px-1" src="./images/heart-btn.png" alt="">
-                      </div>
-                    </div>
-                    <p class="mb-0 date">April 14, 2016</p>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex p-3 table-left-border">
-                <div class="me-3">
-                  <div><img src="./images/johnathan.png" alt=""></div>
-                </div>
-                <div class="my-1">
-                  <a class="mb-0 asigned-user-name text-decoration-none">Johnathan Doeting</a>
-                  <p class="t-user-name mt-2 mb-3">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                  <div class="d-flex justify-content-between flex-sm-row flex-column">
-                    <div class="d-flex flex-sm-row flex-column">
-                      <div class="badge bg-light-red text-danger px-4 mb-2 mb-sm-0">Rejected</div>
-                      <div class="px-1 align-items-center like-edit-btn">
-                        <img class="px-1 hi" src="./images/edit-btn.png" alt="">
-                        <img class="px-1" src="./images/close-btn.png" alt="">
-                        <img class="px-1" src="./images/heart-btn.png" alt="">
-                      </div>
-                    </div>
-                    <p class="mb-0 date">April 14, 2016</p>
-                  </div>
-                </div>
+                <div><p class="mb-0 feature-p">Featured Hydroflora Pots Garden 
+                  & Outdoors works</p></div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
-            <div class="card-box h-100">
-              <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center mb-3">
-                <div>
-                  <h4 class="c-title mt-1 mb-0 mb-sm-2">Weather Report</h4>
+          <div class="col-md-4 mb-3">
+            <div class="card-box p-0 h-100">
+              <div><img class="img-fluid w-100" src="./images/f2.png" alt=""></div>
+              <div class="feature-box">
+                <div class="d-flex mb-2 flex-xl-row flex-column">
+                  <p class="me-xl-4">20 May 2016</p>
+                  <p>3 Comments</p>
                 </div>
-                <div>
-                  <select class="form-select card-select border-0 shadow-none text-truncate"
-                    aria-label="Default select example">
-                    <option selected>This Week</option>
-                    <option value="1">tomorrow</option>
-                    <option value="2">yesterday</option>
-                    <option value="3">Today</option>
-                  </select>
-                </div>
-              </div>
-              <div class="line-height-checkbox">
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
-                    <label class="form-check-label t-user-name t-user-name" for="flexCheckDefault1">
-                      Simply dummy text of the printing and typesetting
-                      <span class="badge bg-light-green text-success px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
-                    <label class="form-check-label t-user-name" for="flexCheckDefault2">
-                      Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been.
-                      <span class="badge bg-light-red text-danger px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
-                    <label class="form-check-label t-user-name" for="flexCheckDefault3">
-                      Ipsum is simply dummy text of the printing
-                      <span class="badge bg-light-blue text-primary px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault4">
-                    <label class="form-check-label t-user-name" for="flexCheckDefault4">
-                      Simply dummy text of the printing and typesetting
-                      <span class="badge bg-light-yellow text-warning px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault5">
-                    <label class="form-check-label t-user-name" for="flexCheckDefault5">
-                      Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been.
-                      <span class="badge bg-light-purple text-purple px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="p-3 table-left-border">
-                  <div class="form-check">
-                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault6">
-                    <label class="form-check-label t-user-name" for="flexCheckDefault6">
-                      Ipsum is simply dummy text of the printing
-                      <span class="badge bg-light-green text-success px-3 ms-2">Project</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="checkout-link my-2 px-3"><a href="#" class="full-activity-link text-decoration-none">Checkout Full
-                  List</a>
-                </div>
+                <div><p class="mb-0 feature-p">Flourless Peanut Butter Chocolate 
+                  Cookies with Icecream</p></div>
               </div>
             </div>
-              
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card-box p-0 h-100">
+              <div><img class="img-fluid w-100" src="./images/f3.png" alt=""></div>
+              <div class="feature-box">
+                <div class="d-flex mb-2 flex-xl-row flex-column">
+                  <p class="me-4">20 May 2016</p>
+                  <p>3 Comments</p>
+                </div>
+                <div><p class="mb-0 feature-p">Shark study reveals  taste of taste 
+                  buds with nutritions</p></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1064,7 +831,7 @@
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/style.js"></script>
   <script src="./apexcharts-bundle/dist/apexcharts.js"></script>
-  <script src="./js/dashboard2.js"></script>
+  <script src="./js/dashboard3.js"></script>
 </body>
 
 </html>

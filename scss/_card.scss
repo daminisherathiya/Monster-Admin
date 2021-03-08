@@ -39,7 +39,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgb(116, 90, 242);
+  background-color: $purple;
 }
 .b-blue-dot {
   width: 12px;
@@ -77,7 +77,7 @@
 }
 .follow-btn {
   border-radius: 3px;
-  background-color: rgb(60, 202, 76);
+  background-color: #3cca4c;
   color: $white;
   padding: 8.5px 20.9px;
   font-size: $font-13;
@@ -85,7 +85,7 @@
 }
 .follow-btn:hover {
   color: $white;
-  background-color: rgb(138, 211, 146);
+  background-color: #8ad392;
 }
 .p-tag {
   font-size: $font-14;
@@ -116,7 +116,7 @@
 .total-per,
 .total-sale-jan {
   font-weight: $font-weight-normal;
-  color: rgb(82, 92, 101);
+  color: $gray-color;
   font-size: 39px;
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -135,7 +135,7 @@
 }
 .myselecet {
   color: $gray-text-color;
-  background-color: rgb(242, 247, 248);
+  background-color: #f2f7f8;
   font-size: $font-14;
   font-weight: $font-weight-light;
   padding: 9.5px 88px 9.5px 12px;
@@ -194,7 +194,7 @@
 .footer-p {
   font-size: $font-14;
   font-weight: $font-weight-normal;
-  color: rgb(177, 185, 195);
+  color: #b1b9c3;
   margin: 35px 0;
 }
 .footer-theamdesigner {
@@ -257,7 +257,7 @@
 }
 .F {
   font-size: 18px;
-  color: rgb(157, 165, 176);
+  color: #9da5b0;
 }
 
 .chart-container2 {
@@ -265,7 +265,7 @@
 }
 .week-day {
   font-size: 24px;
-  color: rgb(76, 86, 103);
+  color: #4c5667;
   font-weight: $font-weight-normal;
 }
 .weather-location {
@@ -275,7 +275,7 @@
 }
 .weather-component-key, .weather-component-value {
   font-size: $font-14;
-  color: rgb(132, 139, 151);
+  color: #848b97;
   font-weight: $font-weight-normal;
 }
 .weather-component-value {
@@ -312,4 +312,66 @@
 .table-left-border:hover .form-check label{
   font-weight: $font-weight-bold;
 }
+.red-arrow {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(88%) saturate(1329%) hue-rotate(320deg) brightness(103%) contrast(94%);
+}
+.chat-user-name {
+  font-size: $font-13;
+  color: #a6b7bf;
+  font-weight: $font-weight-bold;
+}
+.chat-blue-bg {
+  background-color: #e5f5ff;
+  border-radius: 3px;
+}
+.chat-time {
+  font-size: $font-13;
+  color: #a6b7bf;
+  font-weight: $font-weight-light;
+}
+.chat-green-bg {
+  border-radius: 3px;
+  background-color: #e8fdeb;
+}
+.chat-gray-bg {
+  border-radius: 3px;
+  background-color: #f2f7f8;
+}
+.chat-purple-bg {
+  border-radius: 3px;
+  background-color: #f5f4ff;
+}
+.dot-position {
+  top: 0;
+  right: 6px;
+}
+.purple-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #745af2;
+}
+.yellow-dot {
+  border-radius: 50%;
+  background-color: #ffbc34;
+  width: 8px;
+  height: 8px;
+}
+.feature-box {
+  padding: 31px 35px;
+  @include media-breakpoint-down(xl) {
+    padding: 20px;
+  }
+  font-size: $font-14;
+  color: #a6b7bf;
+  font-weight: $font-weight-light;
+}
+.feature-p {
+  font-size: $font-18;
+  color: $gray-text-color;
+  font-weight: $font-weight-normal;
+}
+
+
+
 

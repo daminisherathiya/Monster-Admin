@@ -75,7 +75,7 @@ ul span {
     .sidebar-link {
       @extend %sidebar-link-style;
       padding: 13px 0 13px 30px;
-      padding-left: 30px;
+      padding-left: 24px;
       &.active > * {
         @extend %sidebar-hover-effect;
       }
