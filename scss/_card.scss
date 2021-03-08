@@ -73,7 +73,7 @@
 .total-sales {
   font-size: $font-14;
   font-weight: $font-weight-normal;
-  color: #a6b7bf;
+  color: $gray-100;
 }
 .follow-btn {
   border-radius: 3px;
@@ -181,7 +181,7 @@
 }
 .dot-p {
   font-size: $font-13;
-  color: #a6b7bf;
+  color: $gray-100;
   font-weight: $font-weight-bold;
   padding: 0 13px 0 7px;
 }
@@ -317,8 +317,11 @@
 }
 .chat-user-name {
   font-size: $font-13;
-  color: #a6b7bf;
+  color: $gray-100;
   font-weight: $font-weight-bold;
+  &:hover {
+    color: $blue-color;
+  }
 }
 .chat-blue-bg {
   background-color: #e5f5ff;
@@ -326,7 +329,7 @@
 }
 .chat-time {
   font-size: $font-13;
-  color: #a6b7bf;
+  color: $gray-100;
   font-weight: $font-weight-light;
 }
 .chat-green-bg {
@@ -363,13 +366,16 @@
     padding: 20px;
   }
   font-size: $font-14;
-  color: #a6b7bf;
+  color: $gray-100;
   font-weight: $font-weight-light;
 }
 .feature-p {
   font-size: $font-18;
   color: $gray-text-color;
   font-weight: $font-weight-normal;
+  &:hover {
+    color: $blue-color;
+  }
 }
 
 
