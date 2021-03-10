@@ -40,10 +40,11 @@ ul span {
 }
 .side-bar {
   width: 260px;
-  height: calc(100vh - 55px);
+  height: calc(100vh - 70px);
   top: 70px;
   overflow: auto;
   z-index: 100;
+  background-color: #f2f7f8;
   @include media-breakpoint-down(lg) {
     width: 75px;
     top: 70px;
@@ -71,7 +72,7 @@ ul span {
   }
   .sidebar-style {
     list-style: none;
-    background-color: #f2f7f8;
+    // background-color: #f2f7f8;
     .sidebar-link {
       @extend %sidebar-link-style;
       padding: 13px 0 13px 30px;
@@ -250,7 +251,7 @@ ul span {
 
 // dashboard5
 
-.dark-sidebar.side-bar .sidebar-style {
+.dark-sidebar.side-bar{
   background-color: #272c33;
 }
 .dark-sidebar.side-bar .sidebar-style .sidebar-link.active {
