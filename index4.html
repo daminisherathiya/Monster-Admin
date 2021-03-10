@@ -9,8 +9,10 @@
   <!-- Bootstrap CSS -->
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="./apexcharts-bundle/dist/apexcharts.css">
   <link rel="icon" type="image/png" href="./images/logo-icon.png" />
   <link rel="stylesheet" href="./css/css-chart.css">
+  <link rel="stylesheet" href="./js/jvector/jquery-jvectormap-2.0.2.css">
   <title>Monster Admin</title>
 </head>
 
@@ -499,80 +501,7 @@
         End Breadcrumb
       ------------------------------------------------->
 
-      <!-----------------------------------------------
-        Start progress section
-      ------------------------------------------------->
-      <div>
-        <div class="row gx-3">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex justify-content-between progress-box h-100">
-              <div class="px-1">
-                <div class="d-flex align-items-center">
-                  <h6 class="total-counts">2376</h6>
-                  <div class="ms-2 red-arrow">
-                    <img src="./images/dropdown-arrow.png" alt="">
-                  </div>
-                </div>
-                <p class="new-items mb-0 px-1">Total Visits</p>
-              </div>
-              <div id="total-visit"></div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <div class="d-flex align-items-center">
-                  <h6 class="total-counts">9670</h6>
-                  <div class="ms-2">
-                    <img src="./images/up-arrow.png" alt="">
-                  </div>
-                </div>
-                <p class="new-items mb-0 px-1">Total Page Views</p>
-              </div>
-              <div>
-                <div id="total-page-views"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <div class="d-flex align-items-center">
-                  <h6 class="total-counts">1562</h6>
-                  <div class="ms-2">
-                    <img src="./images/up-arrow.png" alt="">
-                  </div>
-                </div>
-                <p class="new-items mb-0 px-1">Unique Visits</p>
-              </div>
-              <div>
-                  <div id="unique-visits"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="d-flex progress-box justify-content-between h-100">
-              <div>
-                <div class="d-flex align-items-center">
-                  <h6 class="total-counts">35%</h6>
-                  <div class="ms-2 red-arrow">
-                    <img src="./images/dropdown-arrow.png" alt="">
-                  </div>
-                </div>
-                <p class="new-items mb-0 px-1">Bounce Rate</p>
-              </div>
-              <div>
-                <div id="bounce-rate"></div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-----------------------------------------------
-        End progress section
-      ------------------------------------------------->
-
-      <!-----------------------------------------------
+          <!-----------------------------------------------
         Start Sales Comparison
       ------------------------------------------------->
       <div>
@@ -582,8 +511,8 @@
               <div class="">
                 <div class="d-flex flex-md-row flex-column justify-content-between sale-comp align-items-center">
                   <div class="ps-3">
-                    <h4 class="chart-h mb-0 mt-1">Total Revenue</h4>
-                    <select class="form-select shadow-none myselecet border-0 bg-white d-inline-block p-0"
+                    <h4 class="chart-h mb-0 mt-1">Total Sales</h4>
+                    <select class="form-select shadow-none myselecet border-0 bg-white d-inline-block p-0 pe-4"
                       aria-label="Default select example">
                       <option selected>January 2017</option>
                       <option value="1">February 2017</option>
@@ -591,41 +520,185 @@
                       <option value="3">April 2017</option>
                     </select>
                   </div>
-                  <div class="d-flex flex-lg-row flex-column">
+                  <div class="d-flex flex-sm-row flex-column">
                     <div class="d-flex align-items-center">
                       <div class="green-dot"></div>
-                      <p class="dot-p mb-0">Billed Invoices</p>
+                      <p class="dot-p mb-0">MedicalPress</p>
                     </div>
                     <div class="d-flex align-items-center">
                       <div class="blue-dot"></div>
-                      <p class="dot-p mb-0">Unbilled Invoices</p>
+                      <p class="dot-p mb-0">RealPlaces</p>
                     </div>
+                    <div class="d-flex align-items-center">
+                        <div class="green-dot"></div>
+                        <p class="dot-p mb-0">RealHomes</p>
+                      </div>
                   </div>
                 </div>
                 <div>
                   <!-- <img class="img-fluid w-100 mb-2" src="./images/chart.png" alt=""> -->
-                  <div id="total-revenue"></div>
+                  <div id="total-sales"></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xl-4">
+            <div class="h-100 d-flex flex-column justify-content-between">
+                <div class="card-box py-3 mb-3">
+                    <div
+                      class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2 mb-sm-4">
+                      <div>
+                        <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
+                      </div>
+                      <div>
+                        <select class="form-select card-select border-0 shadow-none"
+                          aria-label="Default select example">
+                          <option>January 2017</option>
+                          <option selected value="1">February 2017</option>
+                          <option value="2">March 2017</option>
+                          <option value="3">April 2017</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-column flex-sm-row pe-xl-0 px-4 align-items-center">
+                      <div class="py-sm-3 py-4 text-sm-start text-center">
+                        <h6 class="card-total-counts text-purple font-36 mb-0">$3528</h6>
+                        <p class="increase mb-0">10% Increased</p>
+                        <p class="total-sales mb-0">(150-165 Sales)</p>
+                      </div>
+                      <div>
+                        <div id="sales-prediction" class="d-flex justify-content-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-box py-3 mb-3">
+                  <div
+                    class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-2 mb-sm-4">
+                    <div>
+                      <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
+                    </div>
+                    <div>
+                      <select class="form-select card-select border-0 shadow-none"
+                        aria-label="Default select example">
+                        <option>January 2017</option>
+                        <option selected value="1">February 2017</option>
+                        <option value="2">March 2017</option>
+                        <option value="3">April 2017</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between flex-column flex-sm-row px-4 pe-xl-0 align-items-center">
+                    <div class="py-sm-3 py-3 text-sm-start text-center">
+                      <h6 class="card-total-counts text-success font-36 mb-0">$4316</h6>
+                      <p class="increase mb-0">10% Increased</p>
+                      <p class="total-sales mb-0">(150-165 Sales)</p>
+                    </div>
+                    <div>
+                      <!-- <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt=""> -->
+                      <div id="sale-diff-chart" class="d-flex justify-content-center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------------------
+        End Sales Comparison
+      ------------------------------------------------->
+
+      <div>
+        <div class="row gx-3">
+          <div class="col-xl-8">
+            <div class="card-box py-3 mb-3">
+              <div
+                class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-2 mb-sm-4">
+                <div>
+                  <h4 class="c-title mb-0 ps-3">Total Visits</h4>
+                </div>
+                <div>
+                  <select class="form-select card-select border-0 shadow-none"
+                    aria-label="Default select example">
+                    <option>January 2017</option>
+                    <option selected value="1">Select Region</option>
+                    <option value="2">March 2017</option>
+                    <option value="3">April 2017</option>
+                  </select>
+                </div>
+              </div>
+              <div id="visitfromworld" style="width:100%!important; height:371px"></div>
+            </div>
+          </div>
+          <div class="col-xl-4 mb-3">
+            <div class="card-box px-sm-4 overflow-auto">
+              <div class="d-flex justify-content-center justify-content-sm-start">
+                <h4 class="c-title mb-3 mt-1 ps-0">Browser Stats</h4>
+              </div>
+              <div class="d-flex ">
+                <table class="borderless w-100">
+                  <tbody>
+                    <tr>
+                      <td><img src="./images/chrome.png" alt=""></td>
+                      <td class="text-nowrap tag-p">Google Chrome</td>
+                      <td class="text-end"><span class="badge text-primary bg-light-blue">23%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/firefox.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Mozila Firefox</td>
+                      <td class="text-end"><span class="badge text-success bg-light-green">15%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/safari.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Apple Safari</td>
+                      <td class="text-end"><span class="badge text-purple bg-light-purple">07%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/explorer.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Internet Explorer</td>
+                      <td class="text-end"><span class="badge text-warning bg-light-yellow">09%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/opera.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Opera mini</td>
+                      <td class="text-end"><span class="badge text-danger bg-light-red">05%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/netscape.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Netscape Navigator</td>
+                      <td class="text-end"><span class="badge text-success bg-light-green">04%</span></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/microsoft edge.png" alt=""></td>
+                      <td class="text-nowrap  tag-p">Microsoft Edge</td>
+                      <td class="text-end"><span class="badge text-primary bg-light-blue">03%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="row gx-3">
+          <div class="col-xl-8"></div>
+          <div class="col-xl-4">
             <div class="card-box side-p">
               <div class="d-flex flex-xl-row flex-column justify-content-center mt-3">
                 <div class="d-flex justify-content-center mb-3 mb-xl-0">
-                  <div><img class="img-fluid " src="./images/danil3-pic.png" alt=""></div>
+                  <div><img class="img-fluid " src="./images/danil-pic.png" alt=""></div>
                 </div>
-                <div class="text-center text-xl-start ms-xl-4">
+                <div class="text-center text-xl-start ms-xl-4 mt-2">
                   <a href="#" class="text-decoration-none">
                     <h4 class="daniel-pro mb-0 ps-0 text-nowrap">Daniel Kristeen</h4>
                   </a>
                   <p class="uiux-design">UIUX Designer</p>
-                  <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png"
-                      alt="">Follow</button>
+                  <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png" alt="">Follow</button>
                 </div>
               </div>
 
-              <div class="d-flex mt-4 mb-1 justify-content-center">
+              <div class="d-flex my-4 justify-content-center">
                 <div class="text-center">
                   <h6 class="card-total-counts mb-1">14</h6>
                   <p class="p-tag mb-0">Photos</p>
@@ -639,11 +712,19 @@
                   <p class="p-tag mb-0">Tasks</p>
                 </div>
               </div>
+              <p class="profile-p text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore
+              </p>
+              <p class="followers pt-2">Followers</p>
+              <div class="d-flex  justify-content-around justify-content-xl-between py-1 mb-2">
+                <a href="#"><img src="./images/daniel-pic.png" alt=""></a>
+                <a href="#"><img src="./images/lady.png" alt=""></a>
+                <a href="#"><img src="./images/sophia-pic.png" alt=""></a>
+                <a href="#"><img src="./images/5plus.png" alt=""></a>
+              </div>
             </div>
             <div class="card-box border-top-0 side-p mb-3">
-              <p class="profile-p text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore </p>
-              <div class="d-flex  justify-content-around justify-content-xl-between pt-2 pb-1">
+              <div class="d-flex  justify-content-around justify-content-xl-between py-1">
                 <div class="icon-hover">
                   <a href="#"><img src="./images/earth.png" alt=""></a>
                 </div>
@@ -654,7 +735,7 @@
                   <a href="#"><img src="./images/facebook.png" alt=""></a>
                 </div>
                 <div class="icon-hover">
-                  <a href="#"><img src="./images/youtube.png" alt=""></a>
+                  <a href="#"><img src="./images/facebook.png" alt=""></a>
                 </div>
                 <div class="icon-hover">
                   <a href="#"><img src="./images/linkedin.png" alt=""></a>
@@ -664,13 +745,10 @@
           </div>
         </div>
       </div>
-      <!-----------------------------------------------
-        End Sales Comparison
-      ------------------------------------------------->
 
       <div>
         <div class="row gx-3">
-          <div class="col-xl-6 mb-3">
+          <div class="col-xl-6 mb-3 mb-xl-0">
             <div class="card-box px-md-4">
               <div class="d-flex justify-content-center justify-content-sm-start">
                 <h4 class="c-title mb-4 mt-3 ps-0">Recent Chats</h4>
@@ -682,7 +760,7 @@
                     <div class="w-100">
                       <a href="#" class="chat-user-name text-decoration-none">James Anderson</a>
                       <div class="d-flex justify-content-between flex-column flex-sm-row">
-                        <p class="t-user-name chat-blue-bg p-2 me-sm-3 mb-sm-4 mb-2">Lorem Ipsum is simply dummy text of the printing & type setting industry. Lorem Ipsum has been.</p>
+                        <p class="t-user-name chat-blue-bg p-2 me-sm-3 mb-sm-4 mb-2">Lorem Ipsum is simply dummy text of the printing &amp; type setting industry. Lorem Ipsum has been.</p>
                         <div class="text-nowrap d-flex align-items-center"><p class=" chat-time mb-4">10:56 am</p></div>
                       </div>
                     </div>
@@ -723,7 +801,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6 mb-3">
+          <div class="col-xl-6 mb-3 mb-xl-0">
             <div class="card-box h-100">
               <div class="d-flex justify-content-center justify-content-sm-start">
                 <h4 class="c-title my-3 ps-3">Recent Messages</h4>
@@ -752,7 +830,7 @@
               </div>
               <div class="d-flex px-sm-3 py-2">
                 <div class="me-3 position-relative">
-                  <a href="#" ><img src="./images/ricky-pic.png" alt=""></a>
+                  <a href="#"><img src="./images/ricky-pic.png" alt=""></a>
                   <div class="purple-dot position-absolute dot-position"></div>
                 </div>
                 <div>
@@ -777,50 +855,6 @@
         </div>
       </div>
 
-      <div>
-        <div class="row gx-3">
-          <div class="col-md-4 mb-3">
-            <div class="card-box p-0 h-100">
-              <div><img class="img-fluid w-100" src="./images/f1.png" alt=""></div>
-              <div class="feature-box">
-                <div class="d-flex mb-2 flex-xl-row flex-column">
-                  <p class="me-xl-4">20 May 2016</p>
-                  <p>3 Comments</p>
-                </div>
-                <a href="#" class="text-decoration-none feature-p">Featured Hydroflora Pots Garden 
-                  & Outdoors works</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card-box p-0 h-100">
-              <div><img class="img-fluid w-100" src="./images/f2.png" alt=""></div>
-              <div class="feature-box">
-                <div class="d-flex mb-2 flex-xl-row flex-column">
-                  <p class="me-xl-4">20 May 2016</p>
-                  <p>3 Comments</p>
-                </div>
-                <a href="#" class="text-decoration-none feature-p">Flourless Peanut Butter Chocolate 
-                  Cookies with Icecream</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card-box p-0 h-100">
-              <div><img class="img-fluid w-100" src="./images/f3.png" alt=""></div>
-              <div class="feature-box">
-                <div class="d-flex mb-2 flex-xl-row flex-column">
-                  <p class="me-4">20 May 2016</p>
-                  <p>3 Comments</p>
-                </div>
-                <a href="#" class="text-decoration-none feature-p">Shark study reveals  taste of taste 
-                  buds with nutritions</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <footer>
         <p class="footer-p text-center">All Rights Reserved by Monster Admin Template. Designed and Developed by <a
             href="#" class="text-decoration-none footer-theamdesigner">Theme Designer</a> .</p>
@@ -828,10 +862,14 @@
     </div>
   </div>
 
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/style.js"></script>
   <script src="./apexcharts-bundle/dist/apexcharts.js"></script>
-  <script src="./js/dashboard3.js"></script>
+  <script src="./js/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="./js/jvector/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="./js/dashboard4.js"></script>
+  
 </body>
 
 </html>

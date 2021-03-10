@@ -377,7 +377,26 @@
     color: $blue-color;
   }
 }
+.font-36 {
+  font-size: 36px;
+}
 
+.increase {
+  font-size: $font-13;
+  color: $sidebar-link-color;
+  font-weight: $font-weight-light;
+}
+.borderless td, .borderless th {
+  border-width: 0 !important;
+  padding: 12px !important;
+}
+.followers {
+  font-size: $font-15;
+  color: $gray-color;
+}
+
+
+// dashboard5
 
 
 

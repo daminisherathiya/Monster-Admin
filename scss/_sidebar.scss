@@ -247,3 +247,31 @@ ul span {
     width: 155px;
   }
 }
+
+// dashboard5
+
+.dark-sidebar.side-bar .sidebar-style {
+  background-color: #272c33;
+}
+.dark-sidebar.side-bar .sidebar-style .sidebar-link.active {
+  background-color: $blue-color;
+}
+.dark-sidebar.side-bar .sidebar-style .sidebar-link.active>*, .dark-sidebar .side-li:hover .sidebar-link>*, .dark-sidebar .support-link:hover {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1951%) hue-rotate(176deg) brightness(116%) contrast(100%);
+}
+.dark-sidebar.side-bar .sidebar-style .sidebar-link, .dark-sidebar .sidebar-sublink {
+  color: #798699;
+}
+
+// dashboard6
+
+.horizontal-sidebar.side-bar {
+  width: 100%;
+  height: auto;
+}
+.display-horizontal {
+  display: none;
+}
+.horizontal-sidebar.side-bar .sidebar-style {
+  background-color: #ffffff;
+}
