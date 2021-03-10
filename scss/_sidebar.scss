@@ -257,7 +257,7 @@ ul span {
 .dark-sidebar.side-bar .sidebar-style .sidebar-link.active {
   background-color: $blue-color;
 }
-.dark-sidebar.side-bar .sidebar-style .sidebar-link.active>*, .dark-sidebar .side-li:hover .sidebar-link>*, .dark-sidebar .support-link:hover {
+.dark-sidebar.side-bar .sidebar-style .sidebar-link.active>*, .dark-sidebar .side-li:hover .sidebar-link>*, .dark-sidebar .support-link:hover, .dark-sidebar .sidebar-sublink.active {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1951%) hue-rotate(176deg) brightness(116%) contrast(100%);
 }
 .dark-sidebar.side-bar .sidebar-style .sidebar-link, .dark-sidebar .sidebar-sublink {
@@ -268,11 +268,24 @@ ul span {
 
 .horizontal-sidebar.side-bar {
   width: 100%;
-  height: auto;
+  @include media-breakpoint-down(xl) {
+    width: 260px;
+  }
+    height: auto;
 }
 .display-horizontal {
   display: none;
 }
 .horizontal-sidebar.side-bar .sidebar-style {
   background-color: #ffffff;
+  @include media-breakpoint-down(xl) {
+    background-color: #f2f7f8;
+  }
+}
+.horizontal-sidebar + .container-fluid .main-containt {
+  margin-left: 0;
+  padding: 126px 32px 0 32px;
+  @include media-breakpoint-down(xl) {
+    margin-left: 260px;
+  }
 }
